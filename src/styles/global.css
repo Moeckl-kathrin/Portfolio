@@ -621,11 +621,70 @@ img {
   text-transform: uppercase;
   letter-spacing: 0.2em;
   color: var(--color-text-secondary);
+  margin-bottom: 2rem;
+  opacity: 0.6;
+}
+
+.trust-banner__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.trust-banner__logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  background: rgba(108, 99, 255, 0.02);
+  transition: all var(--transition);
+  cursor: pointer;
+}
+
+.trust-banner__logo:hover {
+  background: rgba(108, 99, 255, 0.08);
+  border-color: var(--color-accent);
+  transform: translateY(-2px);
+}
+
+.trust-banner__logo span {
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--color-text-secondary);
+  text-align: center;
+  transition: color var(--transition);
+}
+
+.trust-banner__logo:hover span {
+  color: var(--color-accent);
+}
+
+/* ====== UX METHODOLOGIES ====== */
+.ux-methodologies {
+  padding: 3rem 0;
+  border-bottom: 1px solid var(--color-border);
+  overflow: hidden;
+  position: relative;
+}
+
+.ux-methodologies__label {
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: var(--color-text-secondary);
   margin-bottom: 1.5rem;
   opacity: 0.6;
 }
 
-.trust-banner__track {
+.ux-methodologies__track {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -633,26 +692,31 @@ img {
   -webkit-mask-image: linear-gradient(90deg, transparent, black 10%, black 90%, transparent);
 }
 
-.trust-banner__marquee {
+.ux-methodologies__marquee {
   display: flex;
-  gap: 3rem;
+  gap: 2.5rem;
   width: max-content;
-  animation: marquee 30s linear infinite;
+  animation: marquee 35s linear infinite;
 }
 
-.trust-banner__item {
+.ux-methodologies__item {
   font-family: var(--font-heading);
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-weight: 600;
-  color: var(--color-text-secondary);
-  opacity: 0.35;
+  color: var(--color-accent);
+  opacity: 0.5;
   white-space: nowrap;
   transition: opacity var(--transition);
   letter-spacing: 0.02em;
+  padding: 0.75rem 1.5rem;
+  border: 1px solid rgba(108, 99, 255, 0.2);
+  border-radius: 0.25rem;
 }
 
-.trust-banner__item:hover {
-  opacity: 0.7;
+.ux-methodologies__item:hover {
+  opacity: 1;
+  border-color: var(--color-accent);
+  background: rgba(108, 99, 255, 0.1);
 }
 
 @keyframes marquee {
