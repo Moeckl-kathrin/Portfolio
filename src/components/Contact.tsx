@@ -15,14 +15,6 @@ export default function Contact() {
         >
           ✉ {t.contact.email}
         </a>
-        <a
-          href="https://linkedin.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="contact__btn contact__btn--secondary"
-        >
-          🔗 {t.contact.linkedin}
-        </a>
       </div>
       <SnakeGame />
     </section>
