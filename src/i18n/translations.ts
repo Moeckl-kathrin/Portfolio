@@ -66,7 +66,7 @@ const en: Translations = {
     description: [
       'I\'m a passionate UX Designer with a keen eye for detail and a deep understanding of user behavior. My design philosophy centers around empathy, research, and iterative thinking.',
       'With experience across various industries, I bring a versatile skill set that combines strategic thinking with hands-on design execution. I believe great design is invisible — it just works.',
-      'When I\'m not designing, you\'ll find me exploring new design trends, attending UX meetups, or sketching ideas in my notebook.',
+      'the quick brown fox jumps over the lazy dog',
     ],
   },
   skills: {
