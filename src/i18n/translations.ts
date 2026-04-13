@@ -58,7 +58,7 @@ const en: Translations = {
     greeting: 'Hello, I\'m',
     name: 'Kathrin Möckl',
     title: 'UX Designer',
-    subtitle: 'I craft intuitive digital experiences that bridge the gap between user needs and business goals. With a human-centered approach, I transform complex problems into elegant, accessible solutions.',
+    subtitle: 'I specialize in user-centered research and prototyping, from user interviews and card sorting to tree testing and usability testing. With a background in graphic design and team leadership, I bring a strong sense for visual design, communication, and user behavior. I enjoy structured work, solution-oriented thinking, and collaboration in interdisciplinary teams.',
     cta: 'View My Work',
   },
   about: {
