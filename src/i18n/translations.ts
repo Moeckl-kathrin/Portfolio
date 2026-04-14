@@ -59,14 +59,14 @@ const en: Translations = {
   hero: {
     greeting: 'Hello, I\'m',
     name: 'Kathrin Möckl',
-    title: 'UX Designer',
-    subtitle: 'I specialize in user-centered research and prototyping, from user interviews and card sorting to tree testing and usability testing. With a background in graphic design and team leadership, I bring a strong sense for visual design, communication, and user behavior. I enjoy structured work, solution-oriented thinking, and collaboration in interdisciplinary teams.',
+    title: 'UX  · UI ·  RESEARCH ·  GRAPHIC DESIGN',
+    subtitle: 'UX Designer & Developer from munich — crafting research-driven digital experiences that resonate and scale.',
     cta: 'View My Work',
   },
   about: {
     sectionTitle: 'About Me',
     description: [
-      'I\'m a passionate UX Designer with a keen eye for detail and a deep understanding of user behavior. My design philosophy centers around empathy, research, and iterative thinking.',
+      'Im a passionate UX Designer with a keen eye for detail and a deep understanding of user behavior. My design philosophy centers around empathy, research, and iterative thinking.',
       'With experience across various industries, I bring a versatile skill set that combines strategic thinking with hands-on design execution. I believe great design is invisible — it just works.',
       'the quick brown fox jumps over the lazy dog',
     ],
@@ -143,8 +143,8 @@ const de: Translations = {
   hero: {
     greeting: 'Hallo, ich bin',
     name: 'Kathrin Möckl',
-    title: 'UX Designerin',
-    subtitle: 'Ich gestalte intuitive digitale Erlebnisse, die Nutzerbedürfnisse und Geschäftsziele verbinden. Mit einem menschzentrierten Ansatz verwandle ich komplexe Probleme in elegante, zugängliche Lösungen.',
+    title: 'UX  · UI ·  RESEARCH ·  GRAPHIC DESIGN',
+    subtitle: 'Aus München stammend',
     cta: 'Meine Arbeiten ansehen',
   },
   about: {

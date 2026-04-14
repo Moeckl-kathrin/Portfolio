@@ -10,9 +10,9 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <UXMethodologies />
       <About />
       <Skills />
-      <UXMethodologies />
       <Projects />
       <Contact />
       <Footer />

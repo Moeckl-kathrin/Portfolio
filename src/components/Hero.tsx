@@ -81,9 +81,7 @@ export default function Hero() {
           <span className="hero__name-line">{t.hero.name}</span>
         </h1>
         <p className="hero__title">
-          <span className="hero__title-bracket">&lt;</span>
-          {' '}{t.hero.title}{' '}
-          <span className="hero__title-bracket">/&gt;</span>
+          {t.hero.title}
         </p>
         <p className="hero__subtitle">{t.hero.subtitle}</p>
         <div className="hero__actions">
@@ -95,12 +93,6 @@ export default function Hero() {
               <span>{t.hero.cta}</span>
               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                 <line x1="12" y1="5" x2="12" y2="19" /><polyline points="19 12 12 19 5 12" />
-              </svg>
-            </a>
-            <a href="/kathrin-moeckl-cv.pdf" download className="hero__cta hero__cta--secondary">
-              <span>Download CV</span>
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" /><polyline points="7 10 12 15 17 10" /><line x1="12" y1="15" x2="12" y2="3" />
               </svg>
             </a>
           </div>

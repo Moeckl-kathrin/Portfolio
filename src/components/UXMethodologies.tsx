@@ -5,12 +5,14 @@ const METHODOLOGIES = [
   'Prototyping',
   'Usability Testing',
   'User Interviews',
-  'A/B Testing',
   'Wireframing',
   'Journey Mapping',
-  'Heatmap Analysis',
-  'Eye-Tracking',
-  'Accessibility Audits',
+  'Power Apps Development',
+  'Design Thinking',
+  'Persona Development',
+  'User Flows',
+  'Component Libraries',
+  'Graphic Design',
 ];
 
 export default function UXMethodologies() {
