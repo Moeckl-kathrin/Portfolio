@@ -250,7 +250,7 @@ export default function SnakeGame() {
   };
 
   const tagline = language === 'en'
-    ? 'Still here? Guess my portfolio is working. 🎮'
+    ? 'Lorem impsum'
     : 'Noch da? Scheint, als wirkt mein Portfolio. 🎮';
 
   return (

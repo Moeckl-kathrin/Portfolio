@@ -606,7 +606,7 @@ img {
 /* ====== SKILLS HERO ====== */
 .skills__hero-grid {
   display: grid;
-  grid-template-columns: minmax(320px, 1fr) minmax(420px, 1fr);
+  grid-template-columns: 1fr;
   gap: 2rem;
   align-items: center;
   margin-top: 3rem;
@@ -616,13 +616,7 @@ img {
 }
 
 .skills__visual {
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  border-radius: 32px;
-  min-height: 620px;
   display: none;
-  place-items: center;
 }
 
 .skills__visual-grid {
@@ -652,6 +646,8 @@ img {
 .skills__info {
   display: grid;
   gap: 1.5rem;
+  text-align: center;
+  justify-items: center;
 }
 
 .skills__eyebrow {
@@ -679,7 +675,11 @@ img {
 
 .skills__list {
   display: grid;
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
   gap: 1rem;
+  max-width: 1080px;
+  width: min(100%, 1080px);
+  margin: 0 auto;
 }
 
 .skills__list-item {
@@ -687,6 +687,10 @@ img {
   background: rgba(255, 255, 255, 0.03);
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: 24px;
+  aspect-ratio: 1 / 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .skills__list-title {
@@ -706,8 +710,8 @@ img {
     grid-template-columns: 1fr;
   }
 
-  .skills__visual {
-    min-height: 520px;
+  .skills__list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 
@@ -716,8 +720,8 @@ img {
     gap: 1.5rem;
   }
 
-  .skills__visual {
-    padding: 1.5rem;
+  .skills__list {
+    grid-template-columns: 1fr;
   }
 
   .skills__list-item {
@@ -795,13 +799,13 @@ img {
 
 .ux-methodologies__label {
   text-align: center;
-  font-size: 0.75rem;
-  font-weight: 600;
+  font-size: 1rem;
+  font-weight: 400;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-  color: var(--color-text-secondary);
+  color: #ffffff;
   margin-bottom: 1.5rem;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .ux-methodologies__track {
@@ -823,8 +827,8 @@ img {
   font-family: var(--font-heading);
   font-size: 1rem;
   font-weight: 600;
-  color: var(--color-accent);
-  opacity: 0.5;
+  color: #ffffff;
+  opacity: 0.9;
   white-space: nowrap;
   transition: opacity var(--transition);
   letter-spacing: 0.02em;
