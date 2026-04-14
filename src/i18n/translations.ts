@@ -60,7 +60,7 @@ const en: Translations = {
     greeting: 'Hello, I\'m',
     name: 'Kathrin Möckl',
     title: 'UX  · UI ·  RESEARCH ·  GRAPHIC DESIGN',
-    subtitle: 'UX Designer & Developer from munich — crafting research-driven digital experiences that resonate and scale.',
+    subtitle: 'UX Designer & Researcher from munich, crafting research-driven digital experiences that resonate and scale.',
     cta: 'View My Work',
   },
   about: {
@@ -77,14 +77,14 @@ const en: Translations = {
     sectionIntro: 'I create focused digital service experiences with clean visuals, strong hierarchy and polished delivery. These offerings are built to shape a coherent brand presence across screens and interactions.',
     items: [
       {
-        title: 'Branding',
-        description: 'From naming and visual systems to brand guidelines, I develop identities that feel modern, confident and memorable.',
-        icon: '🧭',
-      },
-      {
         title: 'UI / UX Design',
         description: 'I deliver intuitive interface systems with strong visual structure, clear user flows and polished digital presentation.',
         icon: '🎨',
+      },
+      {
+        title: 'User Research',
+        description: 'I apply UX research methods, from interviews and analytics to usability testing, to inform design decisions.',
+        icon: '🔍',
       },
       {
         title: 'Asset Production',
@@ -144,7 +144,7 @@ const de: Translations = {
     greeting: 'Hallo, ich bin',
     name: 'Kathrin Möckl',
     title: 'UX  · UI ·  RESEARCH ·  GRAPHIC DESIGN',
-    subtitle: 'Aus München stammend',
+    subtitle: 'Als UX Designerin & Researcherin aus München, schaffe ich nutzerzentrierte intuitive Produkte mit großer Wirkung.',
     cta: 'Meine Arbeiten ansehen',
   },
   about: {
@@ -161,14 +161,14 @@ const de: Translations = {
     sectionIntro: 'Ich gestalte digitale Service-Erlebnisse mit klarer Struktur, reduzierten Visuals und einer starken Marke. Diese Leistungen schaffen konsistente Präsenz über digitale Touchpoints hinweg.',
     items: [
       {
-        title: 'Branding',
-        description: 'Vom Naming über visuelle Systeme bis hin zu Brand Guidelines entwickle ich Identitäten, die modern, selbstbewusst und einprägsam sind.',
-        icon: '🧭',
-      },
-      {
         title: 'UI / UX Design',
         description: 'Ich liefere intuitive Interfaces mit klarer Struktur, durchdachten Nutzerflüssen und einer polierten digitalen Erscheinung.',
         icon: '🎨',
+      },
+      {
+        title: 'User Research',
+        description: 'Ich wende UX‑Research‑Methoden an, von Interviews über Analysen bis hin zu Usability‑Tests.',
+        icon: '🔍',
       },
       {
         title: 'Asset Production',
