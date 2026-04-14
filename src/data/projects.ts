@@ -39,8 +39,8 @@ export const projects: ProjectData = {
   en: [
     {
       id: 'finflow',
-      title: 'FinFlow — Banking App Redesign',
-      category: 'Mobile App · Fintech',
+      title: 'My Station App - Redesign',
+      category: 'Mobile App · OMV',
       thumbnail: 'https://images.unsplash.com/photo-1563986768609-322da13575f2?w=800&h=520&fit=crop',
       color: '#6C63FF',
       year: '2025',
@@ -114,8 +114,8 @@ export const projects: ProjectData = {
     },
     {
       id: 'healthmate',
-      title: 'HealthMate — Wellness Platform',
-      category: 'Web App · Healthcare',
+      title: 'Intranet Rebranding',
+      category: 'TÜV SÜD',
       thumbnail: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=520&fit=crop',
       color: '#00C9A7',
       year: '2025',
@@ -189,8 +189,8 @@ export const projects: ProjectData = {
     },
     {
       id: 'shopscape',
-      title: 'ShopScape — E-Commerce Experience',
-      category: 'E-Commerce · Retail',
+      title: 'RPA & BPA',
+      category: 'OMV & TÜV SÜD',
       thumbnail: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=520&fit=crop',
       color: '#FF6B6B',
       year: '2024',
@@ -264,8 +264,8 @@ export const projects: ProjectData = {
     },
     {
       id: 'learnhub',
-      title: 'LearnHub — EdTech Platform',
-      category: 'Web App · Education',
+      title: 'Power Apps Component Library',
+      category: 'OMV & TÜV SÜD',
       thumbnail: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&h=520&fit=crop',
       color: '#FFB347',
       year: '2024',
@@ -341,8 +341,8 @@ export const projects: ProjectData = {
   de: [
     {
       id: 'finflow',
-      title: 'FinFlow — Banking App Redesign',
-      category: 'Mobile App · Fintech',
+      title: 'My Station App - Redesign',
+      category: 'Mobile App · OMV',
       thumbnail: 'https://images.unsplash.com/photo-1563986768609-322da13575f2?w=800&h=520&fit=crop',
       color: '#6C63FF',
       year: '2025',
@@ -416,8 +416,8 @@ export const projects: ProjectData = {
     },
     {
       id: 'healthmate',
-      title: 'HealthMate — Wellness Plattform',
-      category: 'Web App · Healthcare',
+      title: 'Intranet Rebranding',
+      category: 'TÜV SÜD',
       thumbnail: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=800&h=520&fit=crop',
       color: '#00C9A7',
       year: '2025',
@@ -491,8 +491,8 @@ export const projects: ProjectData = {
     },
     {
       id: 'shopscape',
-      title: 'ShopScape — E-Commerce Erlebnis',
-      category: 'E-Commerce · Retail',
+      title: 'RPA & BPA',
+      category: 'OMV & TÜV SÜD',
       thumbnail: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=520&fit=crop',
       color: '#FF6B6B',
       year: '2024',
@@ -566,8 +566,8 @@ export const projects: ProjectData = {
     },
     {
       id: 'learnhub',
-      title: 'LearnHub — EdTech Plattform',
-      category: 'Web App · Bildung',
+      title: 'Power Apps Component Library',
+      category: 'OMV & TÜV SÜD',
       thumbnail: 'https://images.unsplash.com/photo-1501504905252-473c47e087f8?w=800&h=520&fit=crop',
       color: '#FFB347',
       year: '2024',
