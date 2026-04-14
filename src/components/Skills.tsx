@@ -6,33 +6,29 @@ export default function Skills() {
   const [ref, isVisible] = useInView<HTMLElement>();
 
   return (
-    <section id="skills" className="section" ref={ref}>
+    <section id="skills" className="section section--skills" ref={ref}>
       <div className={`fade-in${isVisible ? ' fade-in--visible' : ''}`}>
-        <h2 className="section__title">{t.skills.sectionTitle}</h2>
-        <p className="section__subtitle">{t.skills.sectionSubtitle}</p>
-        <div className="services__layout">
-          <div className="services__media">
-            <div className="services__media-frame">
-              <img
-                src="https://ik.imagekit.io/1levduhdq/IMG_1289.JPG?updatedAt=1"
-                alt={t.skills.sectionTitle}
-                className="services__media-image"
-              />
-            </div>
-            <div className="services__media-glow" aria-hidden="true" />
-          </div>
-          <div className="services__content">
-            <div className="services__hero">
-              <span className="services__eyebrow">{t.skills.sectionSubtitle}</span>
-              <h3 className="services__hero-title">{t.skills.items[0].title}</h3>
-              <p className="services__hero-text">{t.skills.items[0].description}</p>
-            </div>
-            <div className="services__list">
-              {t.skills.items.slice(1).map((skill) => (
-                <div key={skill.title} className="services__item">
-                  <h4 className="services__item-title">{skill.title}</h4>
-                  <p className="services__item-desc">{skill.description}</p>
+        <div className="skills__hero-grid">
+          <div className="skills__visual">
+            <div className="skills__visual-grid">
+              {Array.from({ length: 9 }).map((_, index) => (
+                <div key={index} className="skills__visual-card">
+                  <div className="skills__visual-dot" />
                 </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="skills__info">
+            <span className="skills__eyebrow">{t.skills.sectionSubtitle}</span>
+            <h2 className="skills__title">{t.skills.sectionTitle}</h2>
+            <p className="skills__text">{t.skills.sectionIntro}</p>
+            <div className="skills__list">
+              {t.skills.items.map((skill) => (
+                <article key={skill.title} className="skills__list-item">
+                  <h3 className="skills__list-title">{skill.title}</h3>
+                  <p className="skills__list-desc">{skill.description}</p>
+                </article>
               ))}
             </div>
           </div>

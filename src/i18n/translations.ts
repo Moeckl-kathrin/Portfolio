@@ -21,6 +21,7 @@ export interface Translations {
   skills: {
     sectionTitle: string;
     sectionSubtitle: string;
+    sectionIntro: string;
     items: { title: string; description: string; icon: string }[];
   };
   projects: {
@@ -73,36 +74,37 @@ const en: Translations = {
   skills: {
     sectionTitle: 'What I Do',
     sectionSubtitle: 'Services Overview',
+    sectionIntro: 'I create focused digital service experiences with clean visuals, strong hierarchy and polished delivery. These offerings are built to shape a coherent brand presence across screens and interactions.',
     items: [
       {
-        title: 'UX Research',
-        description: 'User interviews, surveys, usability testing, persona development, and journey mapping to uncover deep user insights.',
-        icon: '🔍',
+        title: 'Branding',
+        description: 'From naming and visual systems to brand guidelines, I develop identities that feel modern, confident and memorable.',
+        icon: '🧭',
       },
       {
-        title: 'UI Design',
-        description: 'Pixel-perfect interface design with a focus on visual hierarchy, typography, and cohesive design systems.',
+        title: 'UI / UX Design',
+        description: 'I deliver intuitive interface systems with strong visual structure, clear user flows and polished digital presentation.',
         icon: '🎨',
       },
       {
+        title: 'Asset Production',
+        description: 'From digital assets to campaign visuals, I create consistent graphic output that supports the brand language.',
+        icon: '🖼️',
+      },
+      {
+        title: 'Web & App Design',
+        description: 'I design responsive web and product experiences with clarity, speed and a strong focus on the end user.',
+        icon: '💻',
+      },
+      {
         title: 'Interaction Design',
-        description: 'Crafting meaningful micro-interactions and animations that enhance the user experience and delight users.',
+        description: 'I craft motion, transitions and micro-interactions that make interfaces feel intuitive and alive.',
         icon: '✨',
       },
       {
-        title: 'Prototyping',
-        description: 'From low-fidelity wireframes to high-fidelity interactive prototypes using Figma, Sketch, and Adobe XD.',
-        icon: '📐',
-      },
-      {
-        title: 'Design Systems',
-        description: 'Building scalable, consistent component libraries and design tokens that accelerate team productivity.',
-        icon: '🧩',
-      },
-      {
-        title: 'Strategy & Workshop',
-        description: 'Facilitating design thinking workshops, stakeholder alignment sessions, and product strategy development.',
-        icon: '💡',
+        title: 'Webflow',
+        description: 'I build production-ready Webflow experiences that look refined and are easy to manage.',
+        icon: '🌐',
       },
     ],
   },
@@ -154,38 +156,39 @@ const de: Translations = {
     ],
   },
   skills: {
-    sectionTitle: 'Was Ich Mache',
+    sectionTitle: 'Was ich mache',
     sectionSubtitle: 'Dienstleistungsübersicht',
+    sectionIntro: 'Ich gestalte digitale Service-Erlebnisse mit klarer Struktur, reduzierten Visuals und einer starken Marke. Diese Leistungen schaffen konsistente Präsenz über digitale Touchpoints hinweg.',
     items: [
       {
-        title: 'UX Research',
-        description: 'Nutzerinterviews, Umfragen, Usability-Tests, Persona-Entwicklung und Journey Mapping für tiefe Nutzereinblicke.',
-        icon: '🔍',
+        title: 'Branding',
+        description: 'Vom Naming über visuelle Systeme bis hin zu Brand Guidelines entwickle ich Identitäten, die modern, selbstbewusst und einprägsam sind.',
+        icon: '🧭',
       },
       {
-        title: 'UI Design',
-        description: 'Pixelgenaues Interface-Design mit Fokus auf visuelle Hierarchie, Typografie und kohärente Designsysteme.',
+        title: 'UI / UX Design',
+        description: 'Ich liefere intuitive Interfaces mit klarer Struktur, durchdachten Nutzerflüssen und einer polierten digitalen Erscheinung.',
         icon: '🎨',
       },
       {
+        title: 'Asset Production',
+        description: 'Von digitalen Assets bis hin zu Kampagnenvisuals: Ich erstelle konsistente Grafikprodukte, die die Marke stärken.',
+        icon: '🖼️',
+      },
+      {
+        title: 'Web & App Design',
+        description: 'Ich designe responsive Web- und Produkt-Erlebnisse mit Fokus auf Klarheit, Geschwindigkeit und Nutzerfreundlichkeit.',
+        icon: '💻',
+      },
+      {
         title: 'Interaction Design',
-        description: 'Bedeutungsvolle Micro-Interactions und Animationen, die das Nutzererlebnis bereichern und begeistern.',
+        description: 'Ich kreiere Motion, Übergänge und Micro-Interactions, die Interfaces intuitiv und lebendig machen.',
         icon: '✨',
       },
       {
-        title: 'Prototyping',
-        description: 'Von Low-Fidelity Wireframes bis hin zu interaktiven High-Fidelity Prototypen mit Figma, Sketch und Adobe XD.',
-        icon: '📐',
-      },
-      {
-        title: 'Design Systeme',
-        description: 'Aufbau skalierbarer, konsistenter Komponentenbibliotheken und Design Tokens für mehr Teamproduktivität.',
-        icon: '🧩',
-      },
-      {
-        title: 'Strategie & Workshops',
-        description: 'Moderation von Design Thinking Workshops, Stakeholder-Alignment und Produktstrategieentwicklung.',
-        icon: '💡',
+        title: 'Webflow',
+        description: 'Ich baue produktionsreife Webflow-Erlebnisse, die hochwertig aussehen und einfach zu pflegen sind.',
+        icon: '🌐',
       },
     ],
   },

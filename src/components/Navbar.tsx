@@ -45,11 +45,6 @@ export default function Navbar() {
           </a>
         </li>
         <li>
-          <a href="#skills" onClick={(e) => { e.preventDefault(); scrollTo('skills'); }}>
-            Skills
-          </a>
-        </li>
-        <li>
           <a href="#projects" onClick={(e) => { e.preventDefault(); scrollTo('projects'); }}>
             {t.nav.projects}
           </a>
