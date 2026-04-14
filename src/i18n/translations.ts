@@ -20,6 +20,7 @@ export interface Translations {
   };
   skills: {
     sectionTitle: string;
+    sectionSubtitle: string;
     items: { title: string; description: string; icon: string }[];
   };
   projects: {
@@ -71,6 +72,7 @@ const en: Translations = {
   },
   skills: {
     sectionTitle: 'What I Do',
+    sectionSubtitle: 'Services Overview',
     items: [
       {
         title: 'UX Research',
@@ -153,6 +155,7 @@ const de: Translations = {
   },
   skills: {
     sectionTitle: 'Was Ich Mache',
+    sectionSubtitle: 'Dienstleistungsübersicht',
     items: [
       {
         title: 'UX Research',
