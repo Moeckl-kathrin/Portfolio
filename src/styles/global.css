@@ -5,12 +5,12 @@
   --color-bg-card-hover: #22223a;
   --color-text: #e8e8f0;
   --color-text-secondary: #9898b0;
-  --color-accent: #6C63FF;
-  --color-accent-hover: #5a52e0;
+  --color-accent: #c8b395;
+  --color-accent-hover: #b79f7d;
   --color-border: #2a2a3e;
-  --color-gradient-1: #6C63FF;
-  --color-gradient-2: #00C9A7;
-  --color-gradient-3: #FF6B6B;
+  --color-gradient-1: #d8c3a2;
+  --color-gradient-2: #e8d8c3;
+  --color-gradient-3: #f5ebda;
   --font-heading: 'Space Grotesk', sans-serif;
   --font-body: 'Inter', sans-serif;
   --max-width: 1200px;
@@ -36,6 +36,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+}
+
+h1 {
+  font-family: 'Roboto Mono', monospace;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
 }
 
 a {
