@@ -13,7 +13,7 @@ export default function About() {
           <div className="about__image">
             <div className="about__image-frame">
               <img
-                src="https://ik.imagekit.io/1levduhdq/IMG_1289.JPG"
+                src="https://ik.imagekit.io/1levduhdq/tr:w-400,q-80/profil_photo_moeckl_edited.jpg"
                 alt="Kathrin Möckl"
                 className="about__image-photo"
               />
