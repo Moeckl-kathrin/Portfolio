@@ -66,9 +66,8 @@ const en: Translations = {
   about: {
     sectionTitle: 'About Me',
     description: [
-      'Im a passionate UX Designer with a keen eye for detail and a deep understanding of user behavior. My design philosophy centers around empathy, research, and iterative thinking.',
-      'With experience across various industries, I bring a versatile skill set that combines strategic thinking with hands-on design execution. I believe great design is invisible — it just works.',
-      'the quick brown fox jumps over the lazy dog',
+      'I believe good technology needs no explanation. It just works, for everyone, not only for the people who build it.',
+      'I come from the customer side. I spent years in retail management understanding what people actually need, trained my visual thinking as a graphic designer and spent time in two international corporations doing UX research and design from scratch. That combination is what shapes my work as a UX designer.',
     ],
   },
   skills: {
@@ -150,45 +149,44 @@ const de: Translations = {
   about: {
     sectionTitle: 'Über Mich',
     description: [
-      'Ich bin eine leidenschaftliche UX Designerin mit einem Auge fürs Detail und einem tiefen Verständnis für Nutzerverhalten. Meine Designphilosophie basiert auf Empathie, Forschung und iterativem Denken.',
-      'Mit Erfahrung in verschiedenen Branchen bringe ich ein vielseitiges Skillset mit, das strategisches Denken mit praktischer Designumsetzung verbindet. Ich glaube, dass großartiges Design unsichtbar ist — es funktioniert einfach.',
-      'Wenn ich nicht gerade designe, entdecke ich neue Designtrends, besuche UX Meetups oder skizziere Ideen in meinem Notizbuch.',
+      'Ich glaube, dass gute Technologie keine lange Erklärung brauchen sollte. Sie funktioniert einfach, für jeden und nicht nur für die, die sie bauen.',
+      'Als Shopleitung & E-Commerce hab ich jahrelang gelernt, was Nutzer*innen kommunizieren, als Grafikerin gelernt visuell zu denken und in zwei internationalen Konzernen Research und Design von Grund auf gemacht. Das macht den Unterschied in meiner Arbeit als UX Designerin.',
     ],
   },
   skills: {
     sectionTitle: 'Was ich mache',
     sectionSubtitle: 'Dienstleistungsübersicht',
-    sectionIntro: 'Ich gestalte digitale Service-Erlebnisse mit klarer Struktur, reduzierten Visuals und einer starken Marke. Diese Leistungen schaffen konsistente Präsenz über digitale Touchpoints hinweg.',
+    sectionIntro: '',
     items: [
       {
-        title: 'UI / UX Design',
-        description: 'Ich liefere intuitive Interfaces mit klarer Struktur, durchdachten Nutzerflüssen und einer polierten digitalen Erscheinung.',
-        icon: '🎨',
-      },
-      {
-        title: 'User Research',
-        description: 'Ich wende UX‑Research‑Methoden an, von Interviews über Analysen bis hin zu Usability‑Tests.',
+        title: 'UX Design',
+        description: 'Informationsarchitektur, klare Nutzerflüsse und nachvollziehbare Interaktionskonzepte bilden die Grundlage meiner Arbeit.',
         icon: '🔍',
       },
       {
-        title: 'Asset Production',
-        description: 'Von digitalen Assets bis hin zu Kampagnenvisuals: Ich erstelle konsistente Grafikprodukte, die die Marke stärken.',
+        title: 'UI Design',
+        description: 'Reduzierte, konsistente Oberflächen mit Fokus auf visuelle Klarheit, umgesetzt primär in Figma.',
+        icon: '🎨',
+      },
+      {
+        title: 'Component Libraries Aufbau',
+        description: 'Zur Wiederverwendung von Komponenten innerhalb der Power Platform baue ich Component Libraries in Einhaltung der Corporate Identity.',
+        icon: '🧩',
+      },
+      {
+        title: 'Business Process Flow Design',
+        description: 'Ich übersetze definierte Business-Prozesse in klare, intuitive Interfaces für Business Process Automation.',
+        icon: '⚙️',
+      },
+      {
+        title: 'Mobile App Design',
+        description: 'Ich gestalte mobile Anwendungen mit Fokus auf Usability, klare Navigation und effiziente Interaktionen.',
+        icon: '📱',
+      },
+      {
+        title: 'Graphic Design',
+        description: 'Von digitalen Assets bis hin zu Kampagnenvisuals: Ich erstelle konsistente Grafikprodukte, die Marken stärken.',
         icon: '🖼️',
-      },
-      {
-        title: 'Web & App Design',
-        description: 'Ich designe responsive Web- und Produkt-Erlebnisse mit Fokus auf Klarheit, Geschwindigkeit und Nutzerfreundlichkeit.',
-        icon: '💻',
-      },
-      {
-        title: 'Interaction Design',
-        description: 'Ich kreiere Motion, Übergänge und Micro-Interactions, die Interfaces intuitiv und lebendig machen.',
-        icon: '✨',
-      },
-      {
-        title: 'Webflow',
-        description: 'Ich baue produktionsreife Webflow-Erlebnisse, die hochwertig aussehen und einfach zu pflegen sind.',
-        icon: '🌐',
       },
     ],
   },
