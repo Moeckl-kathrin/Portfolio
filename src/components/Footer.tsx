@@ -7,6 +7,7 @@ export default function Footer() {
     <footer className="footer">
       <p>{t.footer.copyright}</p>
       <p>{t.footer.madeWith} ♥</p>
+      <p>{t.footer.linkedin}</p>
     </footer>
   );
 }
