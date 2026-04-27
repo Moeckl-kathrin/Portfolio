@@ -1,4 +1,5 @@
 import Hero from '../components/Hero';
+import TrustBanner from '../components/TrustBanner';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import UXMethodologies from '../components/UXMethodologies';
@@ -10,6 +11,7 @@ export default function HomePage() {
   return (
     <>
       <Hero />
+      <TrustBanner />
       <UXMethodologies />
       <About />
       <Skills />
