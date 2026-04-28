@@ -22,7 +22,7 @@ export default function Skills() {
           <div className="skills__info">
             <span className="skills__eyebrow">{t.skills.sectionSubtitle}</span>
             <h2 className="skills__title">{t.skills.sectionTitle}</h2>
-            <p className="skills__text">{t.skills.sectionIntro}</p>
+            {t.skills.sectionIntro ? <p className="skills__text">{t.skills.sectionIntro}</p> : null}
             <div className="skills__list">
               {t.skills.items.map((skill) => (
                 <article key={skill.title} className="skills__list-item">

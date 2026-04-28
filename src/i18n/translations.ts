@@ -66,44 +66,44 @@ const en: Translations = {
   about: {
     sectionTitle: 'About Me',
     description: [
-      'I believe good technology needs no explanation. It just works, for everyone, not only for the people who build it.',
-      'I come from the customer side. I spent years in retail management understanding what people actually need, trained my visual thinking as a graphic designer and spent time in two internation[...]',
+      'I believe technology should not leave anyone behind, regardless of age or prior knowledge.',
+      'Especially now that AI and automation are reshaping so much, interfaces need to guide people instead of overwhelming them. That perspective is grounded in my experience: as a retail manager, I learned what users really communicate; as a graphic designer, I learned to think visually; and through my UX design studies and work in two international corporations, I built a strong foundation in research and design. That is the combination I bring to every project.',
     ],
   },
   skills: {
     sectionTitle: 'What I Do',
     sectionSubtitle: 'Services Overview',
-    sectionIntro: 'I create focused digital service experiences with clean visuals, strong hierarchy and polished delivery. These offerings are built to shape a coherent brand presence across scre[...]',
+    sectionIntro: '',
     items: [
       {
-        title: 'UI / UX Design',
-        description: 'I deliver intuitive interface systems with strong visual structure, clear user flows and polished digital presentation.',
-        icon: '🎨',
-      },
-      {
-        title: 'User Research',
-        description: 'I apply UX research methods, from interviews and analytics to usability testing, to inform design decisions.',
+        title: 'UX Design',
+        description: 'Information architecture, clear user flows, and understandable interaction concepts form the foundation of my work.',
         icon: '🔍',
       },
       {
-        title: 'Asset Production',
-        description: 'From digital assets to campaign visuals, I create consistent graphic output that supports the brand language.',
+        title: 'UI Design',
+        description: 'Reduced, consistent interfaces with a focus on visual clarity, created primarily in Figma.',
+        icon: '🎨',
+      },
+      {
+        title: 'Component Library Development',
+        description: 'For reusable components within the Power Platform, I build component libraries in line with the corporate identity.',
+        icon: '🧩',
+      },
+      {
+        title: 'Business Process Flow Design',
+        description: 'I translate defined business processes into clear, intuitive interfaces for business process automation.',
+        icon: '⚙️',
+      },
+      {
+        title: 'Mobile App Design',
+        description: 'I design mobile applications with a focus on usability, clear navigation, and efficient interactions.',
+        icon: '📱',
+      },
+      {
+        title: 'Graphic Design',
+        description: 'From digital assets to campaign visuals, I create consistent graphic materials that strengthen brands.',
         icon: '🖼️',
-      },
-      {
-        title: 'Web & App Design',
-        description: 'I design responsive web and product experiences with clarity, speed and a strong focus on the end user.',
-        icon: '💻',
-      },
-      {
-        title: 'Interaction Design',
-        description: 'I craft motion, transitions and micro-interactions that make interfaces feel intuitive and alive.',
-        icon: '✨',
-      },
-      {
-        title: 'Webflow',
-        description: 'I build production-ready Webflow experiences that look refined and are easy to manage.',
-        icon: '🌐',
       },
     ],
   },
@@ -149,8 +149,8 @@ const de: Translations = {
   about: {
     sectionTitle: 'Über Mich',
     description: [
-      'Ich glaube, dass gute Technologie keine lange Erklärung brauchen sollte. Sie funktioniert einfach, für jeden und nicht nur für die, die sie bauen.',
-    'Als Shopleitung & E-Commerce hab ich jahrelang gelernt, was Nutzer*innen kommunizieren, als Grafikerin gelernt visuell zu denken und in zwei internationalen Konzernen Research und Design von Grund auf gemacht. Das macht den Unterschied in meiner Arbeit als UX Designerin.',
+      'Ich glaube Technologie sollte niemanden zurücklassen, egal welches Alter und egal mit welchem Vorwissen.',
+      'Gerade weil KI und Automatisierung so vieles auf den Kopf stellen, braucht es eine Benutzeroberfläche, die Menschen mitnimmt statt sie zu überfordern. Dafür bringe ich einiges mit: Als Shopleitung habe ich gelernt, was Nutzer*innen wirklich kommunizieren. Als Grafikerin, visuell zu denken und während meinem Studium in UX-Design und in zwei internationalen Konzernen habe ich Research und Design von Grund auf gemacht. Das ist die Kombination, die ich in jedes Projekt mitbringe.',
     ],
   },
   skills: {

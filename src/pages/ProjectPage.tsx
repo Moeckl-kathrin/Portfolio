@@ -43,7 +43,11 @@ export default function ProjectPage() {
         {/* Hero Image */}
         <div className="project-detail__hero-img">
           {project.thumbnail ? (
-            <img src={project.thumbnail} alt={project.title} style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+            <img
+              src={project.thumbnail}
+              alt={project.title}
+              style={{ width: '100%', height: '100%', objectFit: project.detailThumbnailFit ?? 'cover', objectPosition: 'center' }}
+            />
           ) : (
             <span>{project.title.split('—')[0].trim()}</span>
           )}
