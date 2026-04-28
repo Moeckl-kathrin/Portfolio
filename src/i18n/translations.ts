@@ -149,7 +149,7 @@ const de: Translations = {
   about: {
     sectionTitle: 'Über Mich',
     description: [
-      'Ich glaube, dass gute Technologie keine lange Erklärung brauchen sollte. Sie funktioniert einfach, für jeden und nicht nur für die, die sie bauen.',
+      'Ich glaube, dass gute Technologie sich selbst erklaeren sollte. Sie gehoert denen, die sie benutzen, nicht nur denen, die sie gebaut haben.',
       'Als Shopleitung & E-Commerce hab ich jahrelang gelernt, was Nutzer*innen kommunizieren, als Grafikerin gelernt visuell zu denken und in zwei internationalen Konzernen Research und Design von Grund auf gemacht. Das macht den Unterschied in meiner Arbeit als UX Designerin.',
     ],
   },
