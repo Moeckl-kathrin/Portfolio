@@ -46,7 +46,6 @@ export interface Translations {
   footer: {
     copyright: string;
     madeWith: string;
-    linkedin: string;
   };
 }
 
@@ -130,7 +129,6 @@ const en: Translations = {
   footer: {
     copyright: '© 2026 Kathrin Möckl. All rights reserved.',
     madeWith: 'Designed with passion',
-    linkedin: 'LinkedIn',
   },
 };
 
@@ -214,7 +212,6 @@ const de: Translations = {
   footer: {
     copyright: '© 2026 Kathrin Möckl. Alle Rechte vorbehalten.',
     madeWith: 'Mit Leidenschaft gestaltet',
-    linkedin: 'LinkedIn',
   },
 };
 
