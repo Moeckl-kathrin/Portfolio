@@ -104,8 +104,8 @@ export default function ProjectPage() {
         {/* Gallery Image 1 */}
         {project.gallery[0] && (
           <div className="project-detail__gallery-single">
-            <img src={project.gallery[0].src} alt={project.gallery[0].caption} />
-            <p className="project-detail__gallery-caption">{project.gallery[0].caption}</p>
+            <img src={project.gallery[0].src} alt={project.gallery[0].caption || project.title} />
+            {project.gallery[0].caption ? <p className="project-detail__gallery-caption">{project.gallery[0].caption}</p> : null}
           </div>
         )}
 
@@ -138,8 +138,8 @@ export default function ProjectPage() {
         {/* Gallery Image 2 */}
         {project.gallery[1] && (
           <div className="project-detail__gallery-single">
-            <img src={project.gallery[1].src} alt={project.gallery[1].caption} />
-            <p className="project-detail__gallery-caption">{project.gallery[1].caption}</p>
+            <img src={project.gallery[1].src} alt={project.gallery[1].caption || project.title} />
+            {project.gallery[1].caption ? <p className="project-detail__gallery-caption">{project.gallery[1].caption}</p> : null}
           </div>
         )}
 
@@ -172,8 +172,8 @@ export default function ProjectPage() {
         {/* Gallery Image 3 */}
         {project.gallery[2] && (
           <div className="project-detail__gallery-single">
-            <img src={project.gallery[2].src} alt={project.gallery[2].caption} />
-            <p className="project-detail__gallery-caption">{project.gallery[2].caption}</p>
+            <img src={project.gallery[2].src} alt={project.gallery[2].caption || project.title} />
+            {project.gallery[2].caption ? <p className="project-detail__gallery-caption">{project.gallery[2].caption}</p> : null}
           </div>
         )}
 

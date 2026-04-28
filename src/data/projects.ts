@@ -177,7 +177,7 @@ export const projects: ProjectData = {
         'Combining qualitative interviews with analytics creates stronger product decisions',
       ],
       gallery: [
-        { src: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&h=700&fit=crop', caption: 'Desk Research — Analysis of usage data and global content patterns' },
+        { src: 'https://ik.imagekit.io/1levduhdq/videoframe_12478.png', caption: '' },
         { src: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=1200&h=700&fit=crop', caption: 'Information Architecture — Card sorting and prioritization of MVP topics' },
         { src: 'https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=1200&h=700&fit=crop', caption: 'Intranet Concept — Wireframes and UX foundation for external implementation' },
       ],
@@ -437,7 +437,6 @@ export const projects: ProjectData = {
         'Die Suchfunktion war der größte Pain Point: Nutzer vertrauten ihr nicht und brachen sie vorzeitig ab',
         'News ist der wichtigste Einstiegspunkt ins Intranet, Qualität und Relevanz entscheiden über das Gesamtbild',
         'Internationale Mitarbeitende kämpften mit Sprachbarrieren und Deutschland-zentrierten Inhalten',
-        'Matomo-Daten (März 25 bis März 26) zeigten 72% Visits aus Deutschland, internationale Nutzung war stark unterrepräsentiert',
       ],
       process: [
         { title: 'Desk Research & Data Collection', description: 'Analyse von Matomo-Nutzungsdaten, Erstellung der Interview-Kandidatenliste und interne Systemanalyse.', icon: '🔍' },
@@ -467,14 +466,14 @@ export const projects: ProjectData = {
         'Matomo-Daten analysiert und mit qualitativen Findings verknüpft',
         'Klare Handlungsempfehlungen für Search, News, Content Management, SharePoint und Chatbot',
         'Grundlage für Card Sorting, Wireframes und externe Umsetzung geschaffen',
-      },
+      ],
       learnings: [
         'Die Qualität globaler Intranets entsteht durch Balance zwischen lokaler Relevanz und globaler Konsistenz',
         'Vertrauen in Suche und klare Content-Governance sind zentrale Hebel für Akzeptanz',
         'Die Verknüpfung aus qualitativer Forschung und Analytics führt zu belastbareren Produktentscheidungen',
       ],
       gallery: [
-        { src: 'https://images.unsplash.com/photo-1576091160550-2173dba999ef?w=1200&h=700&fit=crop', caption: 'Desk Research — Analyse von Nutzungsdaten und globalen Content-Mustern' },
+        { src: 'https://ik.imagekit.io/1levduhdq/videoframe_12478.png', caption: '' },
         { src: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=1200&h=700&fit=crop', caption: 'Informationsarchitektur — Card Sorting und Priorisierung der MVP-Themen' },
         { src: 'https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=1200&h=700&fit=crop', caption: 'Intranet-Konzept — Wireframes und UX-Basis für die externe Umsetzung' },
       ],
