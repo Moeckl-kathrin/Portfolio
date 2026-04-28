@@ -46,6 +46,7 @@ export interface Translations {
   footer: {
     copyright: string;
     madeWith: string;
+    linkedin: string;
   };
 }
 
@@ -67,13 +68,13 @@ const en: Translations = {
     sectionTitle: 'About Me',
     description: [
       'I believe good technology needs no explanation. It just works, for everyone, not only for the people who build it.',
-      'I come from the customer side. I spent years in retail management understanding what people actually need, trained my visual thinking as a graphic designer and spent time in two international corporations doing UX research and design from scratch. That combination is what shapes my work as a UX designer.',
+      'I come from the customer side. I spent years in retail management understanding what people actually need, trained my visual thinking as a graphic designer and spent time in two internation[...]',
     ],
   },
   skills: {
     sectionTitle: 'What I Do',
     sectionSubtitle: 'Services Overview',
-    sectionIntro: 'I create focused digital service experiences with clean visuals, strong hierarchy and polished delivery. These offerings are built to shape a coherent brand presence across screens and interactions.',
+    sectionIntro: 'I create focused digital service experiences with clean visuals, strong hierarchy and polished delivery. These offerings are built to shape a coherent brand presence across scre[...]',
     items: [
       {
         title: 'UI / UX Design',
@@ -129,6 +130,7 @@ const en: Translations = {
   footer: {
     copyright: '© 2026 Kathrin Möckl. All rights reserved.',
     madeWith: 'Designed with passion',
+    linkedin: 'LinkedIn',
   },
 };
 
@@ -149,8 +151,8 @@ const de: Translations = {
   about: {
     sectionTitle: 'Über Mich',
     description: [
-      'Ich glaube, dass gute Technologie sich selbst erklaeren sollte. Sie gehoert denen, die sie benutzen, nicht nur denen, die sie gebaut haben.',
-      'Als Shopleitung & E-Commerce hab ich jahrelang gelernt, was Nutzer*innen kommunizieren, als Grafikerin gelernt visuell zu denken und in zwei internationalen Konzernen Research und Design von Grund auf gemacht. Das macht den Unterschied in meiner Arbeit als UX Designerin.',
+      'Ich glaube, dass gute Technologie keine lange Erklärung brauchen sollte. Sie funktioniert einfach, für jeden und nicht nur für die, die sie bauen.',
+    'Als Shopleitung & E-Commerce hab ich jahrelang gelernt, was Nutzer*innen kommunizieren, als Grafikerin gelernt visuell zu denken und in zwei internationalen Konzernen Research und Design von Grund auf gemacht. Das macht den Unterschied in meiner Arbeit als UX Designerin.',
     ],
   },
   skills: {
@@ -212,6 +214,7 @@ const de: Translations = {
   footer: {
     copyright: '© 2026 Kathrin Möckl. Alle Rechte vorbehalten.',
     madeWith: 'Mit Leidenschaft gestaltet',
+    linkedin: 'LinkedIn',
   },
 };
 
