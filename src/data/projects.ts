@@ -30,7 +30,7 @@ export interface Project {
   results: string[];
   testimonial?: { quote: string; author: string; role: string };
   learnings: string[];
-  gallery: { src: string; caption: string }[];
+  gallery: { src: string; caption: string; videoSrc?: string }[];
   nextProject?: string;
 }
 
@@ -126,7 +126,7 @@ export const projects: ProjectData = {
       duration: '5 months',
       team: '2 UX Design Consultants, 2 Project Manager, 2 IT Responsible, internal stakeholders & super admins',
       client: 'TÜV SÜD',
-      tools: ['Condens', 'Figma'],
+      tools: ['Condens', 'Figma', 'CardSorting+', 'UXbeam'],
       challenge: 'TUV SUD\'s global intranet, used by employees worldwide, was outdated, difficult to navigate, and no longer met the needs of a modern international organization. The research phase showed that many employees did not perceive the system as indispensable, even though it hosted central communication and information channels.',
       challengeDetails: [
         'The intranet looked visually outdated and no longer met modern design standards',
@@ -146,7 +146,7 @@ export const projects: ProjectData = {
         { title: 'Desk Research & Data Collection', description: 'Analysis of Matomo usage data, creation of the interview candidate list, and internal system analysis.', icon: '🔍' },
         { title: 'Semi-Structured User Interviews', description: '19 interviews with global employees, including tagging and clustering of all relevant statements in the research tool.', icon: '🗣️' },
         { title: 'Synthesis & MVP Prioritization', description: 'Findings condensed into 3 MVP priorities: Orientation & Findability, Content Ownership, and Intuitive UX/UI.', icon: '📊' },
-        { title: 'Card Sorting', description: 'User-oriented information architecture developed based on employee mental models.', icon: '🗂️' },
+        { title: 'Card Sorting & Tree Testing', description: 'User-oriented information architecture developed based on employee mental models.', icon: '🗂️' },
         { title: 'Wireframe & Mockup Creation', description: 'Prototypes created for handoff to the external implementation team, based on MVP prioritization and Matomo analysis.', icon: '🎨' },
         { title: 'Validation', description: 'Usability testing to validate the defined KPIs (optionally commissioned).', icon: '✅' },
       ],
@@ -177,7 +177,7 @@ export const projects: ProjectData = {
         'Combining qualitative interviews with analytics creates stronger product decisions',
       ],
       gallery: [
-        { src: 'https://ik.imagekit.io/1levduhdq/videoframe_12478.png', caption: '' },
+        { src: 'https://ik.imagekit.io/1levduhdq/videoframe_12478.png', caption: '', videoSrc: 'https://ik.imagekit.io/1levduhdq/videoframe_12478.mp4' },
         { src: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=1200&h=700&fit=crop', caption: 'Information Architecture — Card sorting and prioritization of MVP topics' },
         { src: 'https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=1200&h=700&fit=crop', caption: 'Intranet Concept — Wireframes and UX foundation for external implementation' },
       ],
@@ -423,7 +423,7 @@ export const projects: ProjectData = {
       duration: '5 Monate',
       team: '2 UX Design Consultants, 2 Project Manager, 2 IT Responsible, internal stakeholders & super admins',
       client: 'TÜV SÜD',
-      tools: ['Condens', 'Figma'],
+      tools: ['Condens', 'Figma', 'CardSorting+', 'UXbeam'],
       challenge: 'Das globale Intranet von TÜV SÜD, genutzt von Mitarbeitenden weltweit, war veraltet, schwer navigierbar und entsprach nicht mehr den Anforderungen einer modernen, internationalen Organisation. Die Research-Phase zeigte: Das System wurde von vielen nicht als unverzichtbar wahrgenommen, obwohl es zentrale Kommunikations- und Informationskanäle beherbergte.',
       challengeDetails: [
         'Das Intranet wirkte visuell veraltet und entsprach nicht modernen Design-Standards',
@@ -442,7 +442,7 @@ export const projects: ProjectData = {
         { title: 'Desk Research & Data Collection', description: 'Analyse von Matomo-Nutzungsdaten, Erstellung der Interview-Kandidatenliste und interne Systemanalyse.', icon: '🔍' },
         { title: 'Semistrukturierte User Interviews', description: '19 Interviews mit globalen Mitarbeitenden, Tagging und Clustering aller relevanten Aussagen im Research-Tool.', icon: '🗣️' },
         { title: 'Synthese & MVP-Priorisierung', description: 'Findings zu 3 MVP-Prioritäten verdichtet: Orientation & Findability, Content Ownership, Intuitive UX/UI.', icon: '📊' },
-        { title: 'Card Sorting', description: 'Nutzerorientierte Informationsarchitektur auf Basis mentaler Modelle der Mitarbeitenden entwickelt.', icon: '🗂️' },
+        { title: 'Card Sorting & Tree Testing', description: 'Nutzerorientierte Informationsarchitektur auf Basis mentaler Modelle der Mitarbeitenden entwickelt.', icon: '🗂️' },
         { title: 'Wireframe & Mockup-Erstellung', description: 'Prototypen zur Übergabe an das externe Umsetzungsteam, basierend auf MVP-Priorisierung und Matomo-Auswertung.', icon: '🎨' },
         { title: 'Validierung', description: 'Usability-Tests zur Überprüfung der definierten KPIs (optional beauftragt).', icon: '✅' },
       ],
@@ -473,7 +473,7 @@ export const projects: ProjectData = {
         'Die Verknüpfung aus qualitativer Forschung und Analytics führt zu belastbareren Produktentscheidungen',
       ],
       gallery: [
-        { src: 'https://ik.imagekit.io/1levduhdq/videoframe_12478.png', caption: '' },
+        { src: 'https://ik.imagekit.io/1levduhdq/videoframe_12478.png', caption: '', videoSrc: 'https://ik.imagekit.io/1levduhdq/videoframe_12478.mp4' },
         { src: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=1200&h=700&fit=crop', caption: 'Informationsarchitektur — Card Sorting und Priorisierung der MVP-Themen' },
         { src: 'https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=1200&h=700&fit=crop', caption: 'Intranet-Konzept — Wireframes und UX-Basis für die externe Umsetzung' },
       ],

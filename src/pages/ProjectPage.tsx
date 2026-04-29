@@ -2,7 +2,53 @@ import { useParams, Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
 import { projects } from '../data/projects';
 import Footer from '../components/Footer';
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
+
+function GalleryMedia({ src, caption, videoSrc, title }: { src: string; caption: string; videoSrc?: string; title: string }) {
+  const videoRef = useRef<HTMLVideoElement | null>(null);
+
+  useEffect(() => {
+    if (!videoSrc || !videoRef.current) return;
+
+    const video = videoRef.current;
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          void video.play().catch(() => {
+            // Autoplay can be blocked by browser policies.
+          });
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.45 }
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, [videoSrc]);
+
+  return (
+    <div className="project-detail__gallery-single">
+      {videoSrc ? (
+        <video
+          ref={videoRef}
+          className="project-detail__gallery-media"
+          src={videoSrc}
+          poster={src}
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          controls={false}
+        />
+      ) : (
+        <img className="project-detail__gallery-media" src={src} alt={caption || title} />
+      )}
+      {caption ? <p className="project-detail__gallery-caption">{caption}</p> : null}
+    </div>
+  );
+}
 
 export default function ProjectPage() {
   const { id } = useParams<{ id: string }>();
@@ -103,10 +149,12 @@ export default function ProjectPage() {
 
         {/* Gallery Image 1 */}
         {project.gallery[0] && (
-          <div className="project-detail__gallery-single">
-            <img src={project.gallery[0].src} alt={project.gallery[0].caption || project.title} />
-            {project.gallery[0].caption ? <p className="project-detail__gallery-caption">{project.gallery[0].caption}</p> : null}
-          </div>
+          <GalleryMedia
+            src={project.gallery[0].src}
+            caption={project.gallery[0].caption}
+            videoSrc={project.gallery[0].videoSrc}
+            title={project.title}
+          />
         )}
 
         {/* Design Process */}
@@ -137,10 +185,12 @@ export default function ProjectPage() {
 
         {/* Gallery Image 2 */}
         {project.gallery[1] && (
-          <div className="project-detail__gallery-single">
-            <img src={project.gallery[1].src} alt={project.gallery[1].caption || project.title} />
-            {project.gallery[1].caption ? <p className="project-detail__gallery-caption">{project.gallery[1].caption}</p> : null}
-          </div>
+          <GalleryMedia
+            src={project.gallery[1].src}
+            caption={project.gallery[1].caption}
+            videoSrc={project.gallery[1].videoSrc}
+            title={project.title}
+          />
         )}
 
         {/* Key Features */}
@@ -171,10 +221,12 @@ export default function ProjectPage() {
 
         {/* Gallery Image 3 */}
         {project.gallery[2] && (
-          <div className="project-detail__gallery-single">
-            <img src={project.gallery[2].src} alt={project.gallery[2].caption || project.title} />
-            {project.gallery[2].caption ? <p className="project-detail__gallery-caption">{project.gallery[2].caption}</p> : null}
-          </div>
+          <GalleryMedia
+            src={project.gallery[2].src}
+            caption={project.gallery[2].caption}
+            videoSrc={project.gallery[2].videoSrc}
+            title={project.title}
+          />
         )}
 
         {/* Testimonial */}

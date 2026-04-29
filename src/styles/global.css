@@ -1269,14 +1269,14 @@ img {
   border: 1px solid var(--color-border);
 }
 
-.project-detail__gallery-single img {
+.project-detail__gallery-media {
   width: 100%;
   height: auto;
   display: block;
   transition: transform 0.6s ease;
 }
 
-.project-detail__gallery-single:hover img {
+.project-detail__gallery-single:hover .project-detail__gallery-media {
   transform: scale(1.02);
 }
 
