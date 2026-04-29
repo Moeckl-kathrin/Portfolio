@@ -134,18 +134,67 @@ export default function ProjectPage() {
           </ul>
         </div>
 
-        {/* Research Insights */}
-        <div className="project-detail__section">
-          <h3>{language === 'en' ? 'Research & Insights' : 'Forschung & Erkenntnisse'}</h3>
-          <div className="project-detail__insights-grid">
-            {project.researchInsights.map((insight, i) => (
-              <div key={i} className="project-detail__insight-card">
-                <span className="project-detail__insight-num">{String(i + 1).padStart(2, '0')}</span>
-                <p>{insight}</p>
+        {project.id === 'healthmate' ? (
+          <>
+            {/* Design Process */}
+            <div className="project-detail__section">
+              <h3>{language === 'en' ? 'Design Process' : 'Designprozess'}</h3>
+              <div className="project-detail__process">
+                {project.process.map((step, i) => (
+                  <div key={i} className="project-detail__process-step">
+                    <div className="project-detail__process-icon">{step.icon}</div>
+                    <div className="project-detail__process-line" />
+                    <h4>{step.title}</h4>
+                    <p>{step.description}</p>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
-        </div>
+            </div>
+
+            {/* Research Insights */}
+            <div className="project-detail__section">
+              <h3>{language === 'en' ? 'Research & Insights' : 'Forschung & Erkenntnisse'}</h3>
+              <div className="project-detail__insights-grid">
+                {project.researchInsights.map((insight, i) => (
+                  <div key={i} className="project-detail__insight-card">
+                    <span className="project-detail__insight-num">{String(i + 1).padStart(2, '0')}</span>
+                    <p>{insight}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </>
+        ) : (
+          <>
+            {/* Research Insights */}
+            <div className="project-detail__section">
+              <h3>{language === 'en' ? 'Research & Insights' : 'Forschung & Erkenntnisse'}</h3>
+              <div className="project-detail__insights-grid">
+                {project.researchInsights.map((insight, i) => (
+                  <div key={i} className="project-detail__insight-card">
+                    <span className="project-detail__insight-num">{String(i + 1).padStart(2, '0')}</span>
+                    <p>{insight}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            {/* Design Process */}
+            <div className="project-detail__section">
+              <h3>{language === 'en' ? 'Design Process' : 'Designprozess'}</h3>
+              <div className="project-detail__process">
+                {project.process.map((step, i) => (
+                  <div key={i} className="project-detail__process-step">
+                    <div className="project-detail__process-icon">{step.icon}</div>
+                    <div className="project-detail__process-line" />
+                    <h4>{step.title}</h4>
+                    <p>{step.description}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+          </>
+        )}
 
         {/* Gallery Image 1 */}
         {project.gallery[0] && (
@@ -156,21 +205,6 @@ export default function ProjectPage() {
             title={project.title}
           />
         )}
-
-        {/* Design Process */}
-        <div className="project-detail__section">
-          <h3>{language === 'en' ? 'Design Process' : 'Designprozess'}</h3>
-          <div className="project-detail__process">
-            {project.process.map((step, i) => (
-              <div key={i} className="project-detail__process-step">
-                <div className="project-detail__process-icon">{step.icon}</div>
-                <div className="project-detail__process-line" />
-                <h4>{step.title}</h4>
-                <p>{step.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
 
         {/* Solution */}
         <div className="project-detail__section">
