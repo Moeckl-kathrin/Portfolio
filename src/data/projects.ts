@@ -127,7 +127,7 @@ export const projects: ProjectData = {
       team: '2 UX Design Consultants, 2 Project Manager, 2 IT Responsible, internal stakeholders & super admins',
       client: 'TÜV SÜD',
       tools: ['Condens', 'Figma', 'CardSorting+', 'UXbeam'],
-      challenge: 'TUV SUD\'s global intranet, used by employees worldwide, was outdated, difficult to navigate, and no longer met the needs of a modern international organization. The research phase showed that many employees did not perceive the system as indispensable, even though it hosted central communication and information channels.',
+      challenge: 'TUV SUD\'s global intranet, used by employees worldwide, was outdated, difficult to navigate, and no longer met the needs of a modern international organization.',
       challengeDetails: [
         'The intranet looked visually outdated and no longer met modern design standards',
         'Search returned irrelevant, outdated, or poorly prioritized results',
@@ -140,7 +140,6 @@ export const projects: ProjectData = {
         'Search was the biggest pain point: users did not trust it and abandoned it early',
         'News was the most important entry point to the intranet, and quality and relevance shaped overall perception',
         'International employees struggled with language barriers and Germany-centered content',
-        'Matomo data (Mar 25 to Mar 26) showed 72% of visits from Germany, with international usage heavily underrepresented',
       ],
       process: [
         { title: 'Desk Research & Data Collection', description: 'Analysis of Matomo usage data, creation of the interview candidate list, and internal system analysis.', icon: '🔍' },
@@ -158,12 +157,7 @@ export const projects: ProjectData = {
         'SharePoint as a central hub with consistent UX standards and page templates',
         'Global chatbot as a central entry point across systems (nice-to-have)',
       ],
-      keyFeatures: [
-        { title: 'Orientation & Findability', description: 'Search and navigation redesigned to improve orientation, trust, and efficient access to relevant content.' },
-        { title: 'Content Ownership', description: 'Clear ownership model for global and local content to improve quality, accountability, and maintenance.' },
-        { title: 'Intuitive UX/UI', description: 'Cognitively lighter interface with modern visual hierarchy and clearer language across key user journeys.' },
-        { title: 'Scalable Platform Foundation', description: 'SharePoint templates and cross-system entry concepts prepared for consistent scaling and implementation.' },
-      ],
+      keyFeatures: [],
       results: [
         '3 MVP priorities defined: Orientation & Findability, Content Ownership, and Intuitive UX/UI',
         '19 global user interviews from 5 countries conducted and evaluated',
@@ -424,11 +418,11 @@ export const projects: ProjectData = {
       team: '2 UX Design Consultants, 2 Project Manager, 2 IT Responsible, internal stakeholders & super admins',
       client: 'TÜV SÜD',
       tools: ['Condens', 'Figma', 'CardSorting+', 'UXbeam'],
-      challenge: 'Das globale Intranet von TÜV SÜD, genutzt von Mitarbeitenden weltweit, war veraltet, schwer navigierbar und entsprach nicht mehr den Anforderungen einer modernen, internationalen Organisation. Die Research-Phase zeigte: Das System wurde von vielen nicht als unverzichtbar wahrgenommen, obwohl es zentrale Kommunikations- und Informationskanäle beherbergte.',
+      challenge: 'Das globale Intranet von TÜV SÜD, genutzt von Mitarbeitenden weltweit, war veraltet, schwer navigierbar und entsprach nicht mehr den Anforderungen einer modernen, internationalen Organisation.',
       challengeDetails: [
         'Das Intranet wirkte visuell veraltet und entsprach nicht modernen Design-Standards',
         'Die Suchfunktion lieferte irrelevante, veraltete oder falsch priorisierte Ergebnisse',
-        'Inhalte waren Germany-zentriert und für internationale Mitarbeitende kaum relevant',
+        'Inhalte waren zu sehr auf den deutschen Bereich ausgerichtet und für internationale Mitarbeitende kaum relevant',
         'Klare Content-Verantwortlichkeiten fehlten, viele Seiten waren Sackgassen',
         'Kein responsives Design, obwohl Außendienstmitarbeitende mobilen Zugang benötigten',
       ],
@@ -454,12 +448,7 @@ export const projects: ProjectData = {
         'SharePoint als zentraler Hub mit konsistenten UX-Standards und Page Templates',
         'Globaler Chatbot als zentraler Einstiegspunkt über alle Systeme hinweg (Nice-to-have)',
       ],
-      keyFeatures: [
-        { title: 'Orientation & Findability', description: 'Suche und Navigation wurden neu ausgerichtet, um Orientierung, Vertrauen und schnellen Zugriff auf relevante Inhalte zu verbessern.' },
-        { title: 'Content Ownership', description: 'Ein klares Ownership-Modell für globale und lokale Inhalte stärkt Qualität, Verantwortlichkeit und Pflege.' },
-        { title: 'Intuitive UX/UI', description: 'Eine kognitiv entlastende Oberfläche mit moderner visueller Hierarchie und klarerer Sprache in zentralen Journeys.' },
-        { title: 'Skalierbare Plattform-Basis', description: 'SharePoint-Templates und systemübergreifende Einstiegslogik wurden als konsistente Grundlage vorbereitet.' },
-      ],
+      keyFeatures: [],
       results: [
         '3 MVP-Prioritäten definiert: Orientation & Findability, Content Ownership, Intuitive UX/UI',
         '19 globale User Interviews aus 5 Ländern durchgeführt und ausgewertet',

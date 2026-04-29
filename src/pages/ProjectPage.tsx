@@ -194,17 +194,19 @@ export default function ProjectPage() {
         )}
 
         {/* Key Features */}
-        <div className="project-detail__section">
-          <h3>{language === 'en' ? 'Key Features' : 'Kernfunktionen'}</h3>
-          <div className="project-detail__features-grid">
-            {project.keyFeatures.map((feature, i) => (
-              <div key={i} className="project-detail__feature-card">
-                <h4>{feature.title}</h4>
-                <p>{feature.description}</p>
-              </div>
-            ))}
+        {project.keyFeatures.length > 0 && (
+          <div className="project-detail__section">
+            <h3>{language === 'en' ? 'Key Features' : 'Kernfunktionen'}</h3>
+            <div className="project-detail__features-grid">
+              {project.keyFeatures.map((feature, i) => (
+                <div key={i} className="project-detail__feature-card">
+                  <h4>{feature.title}</h4>
+                  <p>{feature.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Results */}
         <div className="project-detail__section project-detail__results-section">
