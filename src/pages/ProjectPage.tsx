@@ -160,7 +160,7 @@ export default function ProjectPage() {
             {project.learnings.map((learning, i) => (
               <div key={i} className="project-detail__learning-card">
                 <span className="project-detail__learning-num">{String(i + 1).padStart(2, '0')}</span>
-                <p>{learning}</p>
+                <p dangerouslySetInnerHTML={{ __html: learning }} />
               </div>
             ))}
           </div>

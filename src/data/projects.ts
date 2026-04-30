@@ -127,13 +127,12 @@ export const projects: ProjectData = {
       team: '2 UX Design Consultants, 2 Project Manager, 2 IT Responsible, internal stakeholders & super admins',
       client: 'TÜV SÜD',
       tools: ['Condens', 'Figma', 'CardSorting+', 'UXbeam'],
-      challenge: '',
+      challenge: 'TÜV SÜD\'s global intranet, used by employees worldwide, no longer met the requirements of a modern, international organization.',
       challengeDetails: [
-        'The intranet looked visually outdated and no longer met modern design standards',
+        'Visually outdated and not responsive, even though field employees needed mobile access',
         'Search returned irrelevant, outdated, or poorly prioritized results',
-        'Content was Germany-centered and barely relevant for international employees',
-        'Clear content ownership was missing, and many pages became dead ends',
-        'No responsive design, even though field employees needed mobile access',
+        'Content was heavily Germany-centered and barely relevant for international employees',
+        'Missing content ownership led to dead ends and outdated pages',
       ],
       researchInsights: [
         '19 semi-structured user interviews with global employees from Germany, Spain, Italy, the UK, and Asia',
@@ -166,9 +165,9 @@ export const projects: ProjectData = {
         'Foundation created for card sorting, wireframes, and external implementation',
       ],
       learnings: [
-        'Language is structure. It wasn\'t the architecture, but the language that was the biggest hurdle: those who don\'t understand the terminology won\'t find the content.',
-        'Core structure works; exceptions decide. The basic structure proved effective, but a few critical areas determined the entire perceived usability quality.',
-        'Users think in tasks, not in organizational logic. Employees search for answers, not departments: the architecture must follow this task-oriented approach.',
+        '<strong>Language is structure.</strong> It wasn\'t the architecture, but the language that was the biggest hurdle: those who don\'t understand the terminology won\'t find the content.',
+        '<strong>Core structure works; exceptions decide.</strong> The basic structure proved effective, but a few critical areas determined the entire perceived usability quality.',
+        '<strong>Users think in tasks,</strong> not in organizational logic. Employees search for answers, not departments: the architecture must follow this task-oriented approach.',
       ],
       gallery: [
         { src: 'https://ik.imagekit.io/1levduhdq/videoframe_12478.png', caption: '', videoSrc: 'https://ik.imagekit.io/1levduhdq/videoframe_12478.mp4' },
@@ -418,13 +417,12 @@ export const projects: ProjectData = {
       team: '2 UX Design Consultants, 2 Project Manager, 2 IT Responsible, internal stakeholders & super admins',
       client: 'TÜV SÜD',
       tools: ['Condens', 'Figma', 'CardSorting+', 'UXbeam'],
-      challenge: 'Das globale Intranet von TÜV SÜD, genutzt von Mitarbeitenden weltweit, war veraltet, schwer navigierbar und entsprach nicht mehr den Anforderungen einer modernen, internationalen Organisation.',
+      challenge: 'Das globale Intranet von TÜV SÜD, genutzt von Mitarbeitenden weltweit, entsprach nicht mehr den Anforderungen einer modernen, internationalen Organisation.',
       challengeDetails: [
-        'Das Intranet wirkte visuell veraltet und entsprach nicht modernen Design-Standards',
-        'Die Suchfunktion lieferte irrelevante, veraltete oder falsch priorisierte Ergebnisse',
-        'Inhalte waren zu sehr auf den deutschen Bereich ausgerichtet und für internationale Mitarbeitende kaum relevant',
-        'Klare Content-Verantwortlichkeiten fehlten, viele Seiten waren Sackgassen',
-        'Kein responsives Design, obwohl Außendienstmitarbeitende mobilen Zugang benötigten',
+        'Visuell veraltet, kein responsives Design — obwohl Außendienstmitarbeitende mobilen Zugang benötigten',
+        'Suchfunktion lieferte irrelevante, veraltete oder falsch priorisierte Ergebnisse',
+        'Inhalte stark auf den deutschen Bereich ausgerichtet, für internationale Mitarbeitende kaum relevant',
+        'Fehlende Content-Verantwortlichkeiten führten zu Sackgassen und veralteten Seiten',
       ],
       researchInsights: [
         '19 semistrukturierte User Interviews mit globalen Mitarbeitenden aus Deutschland, Spanien, Italien, UK und Asien',
@@ -437,8 +435,8 @@ export const projects: ProjectData = {
         { title: 'Semistrukturierte User Interviews', description: '19 Interviews mit globalen Mitarbeitenden, Tagging und Clustering aller relevanten Aussagen im Research-Tool.', icon: '🗣️' },
         { title: 'Synthese & MVP-Priorisierung', description: 'Findings zu 3 MVP-Prioritäten verdichtet: Orientation & Findability, Content Ownership, Intuitive UX/UI.', icon: '📊' },
         { title: 'Card Sorting & Tree Testing', description: 'Nutzerorientierte Informationsarchitektur auf Basis mentaler Modelle der Mitarbeitenden entwickelt.', icon: '🗂️' },
-        { title: 'Wireframe & Mockup-Erstellung', description: 'Prototypen zur Übergabe an das externe Umsetzungsteam, basierend auf MVP-Priorisierung und Matomo-Auswertung.', icon: '🎨' },
-        { title: 'Validierung', description: 'Usability-Tests zur Überprüfung der definierten KPIs (optional beauftragt).', icon: '✅' },
+        { title: 'Prototyp Erstellung', description: 'Prototypen zur Übergabe an das externe Umsetzungsteam, basierend auf MVP-Priorisierung und Matomo-Auswertung.', icon: '🎨' },
+        { title: 'Testing', description: 'Usability-Tests zur Überprüfung der definierten KPIs (optional beauftragt).', icon: '✅' },
       ],
       solution: 'Aus den Erkenntnissen wurden drei klare MVP-Prioritäten abgeleitet, die als Grundlage für das neue Intranet dienten: eine nutzerorientierte Suche, die fehlertolerant und semantisch stark ist; klare Content-Verantwortlichkeiten auf regionaler und globaler Ebene; und ein intuitives UX/UI-Design, das kognitive Entlastung schafft und Nutzer schnell zu ihren Zielen führt.',
       solutionDetails: [
@@ -457,9 +455,9 @@ export const projects: ProjectData = {
         'Grundlage für Card Sorting, Wireframes und externe Umsetzung geschaffen',
       ],
       learnings: [
-        'Sprache ist Struktur. Nicht die Architektur, sondern die Sprache war die größte Hürde: Wer die Bezeichnungen nicht versteht, findet den Inhalt nicht.',
-        'Die Kernstruktur funktioniert, die Ausnahmen entscheiden. Die Grundstruktur bewährte sich, doch wenige kritische Einzelbereiche bestimmten die gesamte wahrgenommene Nutzungsqualität.',
-        'Nutzende denken in Aufgaben, nicht in Organisationslogik. Mitarbeitende suchen keine Abteilungen, sondern Antworten: Die Architektur muss dieser Aufgabenorientierung folgen.',
+        '<strong>Sprache ist Struktur.</strong> Nicht die Architektur, sondern die Sprache war die größte Hürde: Wer die Bezeichnungen nicht versteht, findet den Inhalt nicht.',
+        '<strong>Die Kernstruktur funktioniert, die Ausnahmen entscheiden.</strong> Die Grundstruktur bewährte sich, doch wenige kritische Einzelbereiche bestimmten die gesamte wahrgenommene Nutzungsqualität.',
+        '<strong>Nutzende denken in Aufgaben,</strong> nicht in Organisationslogik. Mitarbeitende suchen keine Abteilungen, sondern Antworten: Die Architektur muss dieser Aufgabenorientierung folgen.',
       ],
       gallery: [
         { src: 'https://ik.imagekit.io/1levduhdq/videoframe_12478.png', caption: '', videoSrc: 'https://ik.imagekit.io/1levduhdq/videoframe_12478.mp4' },
