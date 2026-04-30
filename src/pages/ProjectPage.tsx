@@ -94,7 +94,7 @@ export default function ProjectPage() {
           <div className="project-detail__process">
             {project.process.map((step, i) => (
               <div key={i} className="project-detail__process-step">
-                <div className="project-detail__process-icon">{step.icon}</div>
+                <div className="project-detail__process-icon">{i + 1}</div>
                 <div className="project-detail__process-line" />
                 <h4>{step.title}</h4>
                 <p>{step.description}</p>
