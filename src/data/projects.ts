@@ -166,9 +166,9 @@ export const projects: ProjectData = {
         'Foundation created for card sorting, wireframes, and external implementation',
       ],
       learnings: [
-        'Global intranet quality depends on balancing local relevance with global consistency',
-        'Search trust and content governance are key success factors for adoption',
-        'Combining qualitative interviews with analytics creates stronger product decisions',
+        'Language is structure. It wasn\'t the architecture, but the language that was the biggest hurdle: those who don\'t understand the terminology won\'t find the content.',
+        'Core structure works; exceptions decide. The basic structure proved effective, but a few critical areas determined the entire perceived usability quality.',
+        'Users think in tasks, not in organizational logic. Employees search for answers, not departments: the architecture must follow this task-oriented approach.',
       ],
       gallery: [
         { src: 'https://ik.imagekit.io/1levduhdq/videoframe_12478.png', caption: '', videoSrc: 'https://ik.imagekit.io/1levduhdq/videoframe_12478.mp4' },
