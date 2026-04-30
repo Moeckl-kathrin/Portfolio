@@ -457,9 +457,9 @@ export const projects: ProjectData = {
         'Grundlage für Card Sorting, Wireframes und externe Umsetzung geschaffen',
       ],
       learnings: [
-        'Die Qualität globaler Intranets entsteht durch Balance zwischen lokaler Relevanz und globaler Konsistenz',
-        'Vertrauen in Suche und klare Content-Governance sind zentrale Hebel für Akzeptanz',
-        'Die Verknüpfung aus qualitativer Forschung und Analytics führt zu belastbareren Produktentscheidungen',
+        'Sprache ist Struktur. Nicht die Architektur, sondern die Sprache war die größte Hürde: Wer die Bezeichnungen nicht versteht, findet den Inhalt nicht.',
+        'Die Kernstruktur funktioniert, die Ausnahmen entscheiden. Die Grundstruktur bewährte sich, doch wenige kritische Einzelbereiche bestimmten die gesamte wahrgenommene Nutzungsqualität.',
+        'Nutzende denken in Aufgaben, nicht in Organisationslogik. Mitarbeitende suchen keine Abteilungen, sondern Antworten: Die Architektur muss dieser Aufgabenorientierung folgen.',
       ],
       gallery: [
         { src: 'https://ik.imagekit.io/1levduhdq/videoframe_12478.png', caption: '', videoSrc: 'https://ik.imagekit.io/1levduhdq/videoframe_12478.mp4' },
