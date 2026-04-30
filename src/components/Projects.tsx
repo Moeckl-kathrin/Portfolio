@@ -6,7 +6,7 @@ import { projects } from '../data/projects';
 export default function Projects() {
   const { language, t } = useLanguage();
   const [ref, isVisible] = useInView<HTMLElement>();
-  const order = ['healthmate', 'finflow', 'shopscape', 'learnhub'];
+  const order = ['global-intranet', 'finflow', 'shopscape', 'learnhub'];
   const projectList = [...projects[language]].sort(
     (a, b) => order.indexOf(a.id) - order.indexOf(b.id)
   );

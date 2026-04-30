@@ -2,53 +2,7 @@ import { useParams, Link } from 'react-router-dom';
 import { useLanguage } from '../i18n/LanguageContext';
 import { projects } from '../data/projects';
 import Footer from '../components/Footer';
-import { useEffect, useRef } from 'react';
-
-function GalleryMedia({ src, caption, videoSrc, title }: { src: string; caption: string; videoSrc?: string; title: string }) {
-  const videoRef = useRef<HTMLVideoElement | null>(null);
-
-  useEffect(() => {
-    if (!videoSrc || !videoRef.current) return;
-
-    const video = videoRef.current;
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          void video.play().catch(() => {
-            // Autoplay can be blocked by browser policies.
-          });
-        } else {
-          video.pause();
-        }
-      },
-      { threshold: 0.45 }
-    );
-
-    observer.observe(video);
-    return () => observer.disconnect();
-  }, [videoSrc]);
-
-  return (
-    <div className="project-detail__gallery-single">
-      {videoSrc ? (
-        <video
-          ref={videoRef}
-          className="project-detail__gallery-media"
-          src={videoSrc}
-          poster={src}
-          muted
-          loop
-          playsInline
-          preload="metadata"
-          controls={false}
-        />
-      ) : (
-        <img className="project-detail__gallery-media" src={src} alt={caption || title} />
-      )}
-      {caption ? <p className="project-detail__gallery-caption">{caption}</p> : null}
-    </div>
-  );
-}
+import { useEffect } from 'react';
 
 export default function ProjectPage() {
   const { id } = useParams<{ id: string }>();
@@ -134,77 +88,20 @@ export default function ProjectPage() {
           </ul>
         </div>
 
-        {project.id === 'healthmate' ? (
-          <>
-            {/* Design Process */}
-            <div className="project-detail__section">
-              <h3>{language === 'en' ? 'Design Process' : 'Designprozess'}</h3>
-              <div className="project-detail__process">
-                {project.process.map((step, i) => (
-                  <div key={i} className="project-detail__process-step">
-                    <div className="project-detail__process-icon">{step.icon}</div>
-                    <div className="project-detail__process-line" />
-                    <h4>{step.title}</h4>
-                    <p>{step.description}</p>
-                  </div>
-                ))}
+        {/* Design Process */}
+        <div className="project-detail__section">
+          <h3>{language === 'en' ? 'Design Process' : 'Designprozess'}</h3>
+          <div className="project-detail__process">
+            {project.process.map((step, i) => (
+              <div key={i} className="project-detail__process-step">
+                <div className="project-detail__process-icon">{step.icon}</div>
+                <div className="project-detail__process-line" />
+                <h4>{step.title}</h4>
+                <p>{step.description}</p>
               </div>
-            </div>
-
-            {/* Research Insights */}
-            <div className="project-detail__section">
-              <h3>{language === 'en' ? 'Research & Insights' : 'Forschung & Erkenntnisse'}</h3>
-              <div className="project-detail__insights-grid">
-                {project.researchInsights.map((insight, i) => (
-                  <div key={i} className="project-detail__insight-card">
-                    <span className="project-detail__insight-num">{String(i + 1).padStart(2, '0')}</span>
-                    <p>{insight}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </>
-        ) : (
-          <>
-            {/* Research Insights */}
-            <div className="project-detail__section">
-              <h3>{language === 'en' ? 'Research & Insights' : 'Forschung & Erkenntnisse'}</h3>
-              <div className="project-detail__insights-grid">
-                {project.researchInsights.map((insight, i) => (
-                  <div key={i} className="project-detail__insight-card">
-                    <span className="project-detail__insight-num">{String(i + 1).padStart(2, '0')}</span>
-                    <p>{insight}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            {/* Design Process */}
-            <div className="project-detail__section">
-              <h3>{language === 'en' ? 'Design Process' : 'Designprozess'}</h3>
-              <div className="project-detail__process">
-                {project.process.map((step, i) => (
-                  <div key={i} className="project-detail__process-step">
-                    <div className="project-detail__process-icon">{step.icon}</div>
-                    <div className="project-detail__process-line" />
-                    <h4>{step.title}</h4>
-                    <p>{step.description}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </>
-        )}
-
-        {/* Gallery Image 1 */}
-        {project.gallery[0] && (
-          <GalleryMedia
-            src={project.gallery[0].src}
-            caption={project.gallery[0].caption}
-            videoSrc={project.gallery[0].videoSrc}
-            title={project.title}
-          />
-        )}
+            ))}
+          </div>
+        </div>
 
         {/* Solution */}
         <div className="project-detail__section">
@@ -216,16 +113,6 @@ export default function ProjectPage() {
             ))}
           </ul>
         </div>
-
-        {/* Gallery Image 2 */}
-        {project.gallery[1] && (
-          <GalleryMedia
-            src={project.gallery[1].src}
-            caption={project.gallery[1].caption}
-            videoSrc={project.gallery[1].videoSrc}
-            title={project.title}
-          />
-        )}
 
         {/* Key Features */}
         {project.keyFeatures.length > 0 && (
@@ -254,16 +141,6 @@ export default function ProjectPage() {
             ))}
           </div>
         </div>
-
-        {/* Gallery Image 3 */}
-        {project.gallery[2] && (
-          <GalleryMedia
-            src={project.gallery[2].src}
-            caption={project.gallery[2].caption}
-            videoSrc={project.gallery[2].videoSrc}
-            title={project.title}
-          />
-        )}
 
         {/* Testimonial */}
         {project.testimonial && (
