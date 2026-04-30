@@ -1292,7 +1292,7 @@ img {
 /* Design Process Timeline */
 .project-detail__process {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1.5rem;
   margin-top: 1.5rem;
 }
