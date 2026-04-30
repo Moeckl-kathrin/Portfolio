@@ -127,7 +127,7 @@ export const projects: ProjectData = {
       team: '2 UX Design Consultants, 2 Project Manager, 2 IT Responsible, internal stakeholders & super admins',
       client: 'TÜV SÜD',
       tools: ['Condens', 'Figma', 'CardSorting+', 'UXbeam'],
-      challenge: 'TUV SUD\'s global intranet, used by employees worldwide, was outdated, difficult to navigate, and no longer met the needs of a modern international organization.',
+      challenge: '',
       challengeDetails: [
         'The intranet looked visually outdated and no longer met modern design standards',
         'Search returned irrelevant, outdated, or poorly prioritized results',
