@@ -12,7 +12,7 @@ export default function ProjectPage() {
 
   // Preserve existing detail mirroring for selected legacy project pages.
   const detailProject =
-    (id === 'learnhub' || id === 'finflow') && project && globalIntranetProject
+    id === 'finflow' && project && globalIntranetProject
       ? {
           ...project,
           thumbnail: globalIntranetProject.thumbnail,
