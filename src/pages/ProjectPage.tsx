@@ -8,35 +8,7 @@ export default function ProjectPage() {
   const { id } = useParams<{ id: string }>();
   const { language, t } = useLanguage();
   const project = projects[language].find((p) => p.id === id);
-  const globalIntranetProject = projects[language].find((p) => p.id === 'global-intranet');
-
-  // Preserve existing detail mirroring for selected legacy project pages.
-  const detailProject =
-    id === 'finflow' && project && globalIntranetProject
-      ? {
-          ...project,
-          thumbnail: globalIntranetProject.thumbnail,
-          detailThumbnailFit: globalIntranetProject.detailThumbnailFit,
-          year: globalIntranetProject.year,
-          overview: globalIntranetProject.overview,
-          role: globalIntranetProject.role,
-          duration: globalIntranetProject.duration,
-          team: globalIntranetProject.team,
-          client: globalIntranetProject.client,
-          tools: globalIntranetProject.tools,
-          challenge: globalIntranetProject.challenge,
-          challengeDetails: globalIntranetProject.challengeDetails,
-          researchInsights: globalIntranetProject.researchInsights,
-          process: globalIntranetProject.process,
-          solution: globalIntranetProject.solution,
-          solutionDetails: globalIntranetProject.solutionDetails,
-          keyFeatures: globalIntranetProject.keyFeatures,
-          results: globalIntranetProject.results,
-          testimonial: globalIntranetProject.testimonial,
-          learnings: globalIntranetProject.learnings,
-          gallery: globalIntranetProject.gallery,
-        }
-      : project;
+  const detailProject = project;
   const nextProject = detailProject?.nextProject
     ? projects[language].find((p) => p.id === detailProject.nextProject)
     : null;
