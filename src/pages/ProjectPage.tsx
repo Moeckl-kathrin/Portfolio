@@ -8,15 +8,47 @@ export default function ProjectPage() {
   const { id } = useParams<{ id: string }>();
   const { language, t } = useLanguage();
   const project = projects[language].find((p) => p.id === id);
-  const nextProject = project?.nextProject
-    ? projects[language].find((p) => p.id === project.nextProject)
+  const globalIntranetProject = projects[language].find((p) => p.id === 'global-intranet');
+
+  // Preserve existing detail mirroring for selected legacy project pages.
+  const detailProject =
+    (id === 'learnhub' || id === 'finflow') && project && globalIntranetProject
+      ? {
+          ...project,
+          thumbnail: globalIntranetProject.thumbnail,
+          detailThumbnailFit: globalIntranetProject.detailThumbnailFit,
+          year: globalIntranetProject.year,
+          overview: globalIntranetProject.overview,
+          role: globalIntranetProject.role,
+          duration: globalIntranetProject.duration,
+          team: globalIntranetProject.team,
+          client: globalIntranetProject.client,
+          tools: globalIntranetProject.tools,
+          challenge: globalIntranetProject.challenge,
+          challengeDetails: globalIntranetProject.challengeDetails,
+          researchInsights: globalIntranetProject.researchInsights,
+          process: globalIntranetProject.process,
+          solution: globalIntranetProject.solution,
+          solutionDetails: globalIntranetProject.solutionDetails,
+          keyFeatures: globalIntranetProject.keyFeatures,
+          results: globalIntranetProject.results,
+          testimonial: globalIntranetProject.testimonial,
+          learnings: globalIntranetProject.learnings,
+          gallery: globalIntranetProject.gallery,
+        }
+      : project;
+  const nextProject = detailProject?.nextProject
+    ? projects[language].find((p) => p.id === detailProject.nextProject)
     : null;
+  const hasSolutionContent = detailProject ? Boolean(detailProject.solution?.trim()) || detailProject.solutionDetails.length > 0 : false;
+  const hasResultsContent = detailProject ? detailProject.results.length > 0 : false;
+  const hasLearningsContent = detailProject ? detailProject.learnings.length > 0 : false;
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, [id]);
 
-  if (!project) {
+  if (!detailProject) {
     return (
       <div className="project-detail" style={{ textAlign: 'center', padding: '10rem 2rem' }}>
         <h2>Project not found</h2>
@@ -34,22 +66,22 @@ export default function ProjectPage() {
         <Link to="/" className="project-detail__back">
           {t.projects.backToProjects}
         </Link>
-        <p className="project-detail__category">{project.category}</p>
-        <h1 className="project-detail__title">{project.title}</h1>
-        <p className="project-detail__overview">{project.overview}</p>
+        <p className="project-detail__category">{detailProject.category}</p>
+        <h1 className="project-detail__title">{detailProject.title}</h1>
+        <p className="project-detail__overview">{detailProject.overview}</p>
       </div>
 
       <div className="project-detail__body">
         {/* Hero Image */}
         <div className="project-detail__hero-img">
-          {project.thumbnail ? (
+          {detailProject.thumbnail ? (
             <img
-              src={project.thumbnail}
-              alt={project.title}
-              style={{ width: '100%', height: '100%', objectFit: project.detailThumbnailFit ?? 'cover', objectPosition: 'center' }}
+              src={detailProject.thumbnail}
+              alt={detailProject.title}
+              style={{ width: '100%', height: '100%', objectFit: detailProject.detailThumbnailFit ?? 'cover', objectPosition: 'center' }}
             />
           ) : (
-            <span>{project.title.split('—')[0].trim()}</span>
+            <span>{detailProject.title.split('—')[0].trim()}</span>
           )}
         </div>
 
@@ -57,32 +89,32 @@ export default function ProjectPage() {
         <div className="project-detail__meta">
           <div className="project-detail__meta-item">
             <h4>{t.projects.role}</h4>
-            <p>{project.role}</p>
+            <p>{detailProject.role}</p>
           </div>
           <div className="project-detail__meta-item">
             <h4>{t.projects.duration}</h4>
-            <p>{project.duration}</p>
+            <p>{detailProject.duration}</p>
           </div>
           <div className="project-detail__meta-item">
             <h4>{language === 'en' ? 'Team' : 'Team'}</h4>
-            <p>{project.team}</p>
+            <p>{detailProject.team}</p>
           </div>
           <div className="project-detail__meta-item">
             <h4>{language === 'en' ? 'Client' : 'Kunde'}</h4>
-            <p>{project.client}</p>
+            <p>{detailProject.client}</p>
           </div>
           <div className="project-detail__meta-item">
             <h4>{t.projects.tools}</h4>
-            <p>{project.tools.join(', ')}</p>
+            <p>{detailProject.tools.join(', ')}</p>
           </div>
         </div>
 
         {/* Challenge */}
         <div className="project-detail__section">
           <h3>{t.projects.challenge}</h3>
-          <p>{project.challenge}</p>
+          <p>{detailProject.challenge}</p>
           <ul className="project-detail__detail-list">
-            {project.challengeDetails.map((item, i) => (
+            {detailProject.challengeDetails.map((item, i) => (
               <li key={i}>{item}</li>
             ))}
           </ul>
@@ -92,7 +124,7 @@ export default function ProjectPage() {
         <div className="project-detail__section">
           <h3>{language === 'en' ? 'Design Process' : 'Designprozess'}</h3>
           <div className="project-detail__process">
-            {project.process.map((step, i) => (
+            {detailProject.process.map((step, i) => (
               <div key={i} className="project-detail__process-step">
                 <div className="project-detail__process-icon">{i + 1}</div>
                 <div className="project-detail__process-line" />
@@ -104,22 +136,26 @@ export default function ProjectPage() {
         </div>
 
         {/* Solution */}
-        <div className="project-detail__section">
-          <h3>{t.projects.solution}</h3>
-          <p>{project.solution}</p>
-          <ul className="project-detail__detail-list">
-            {project.solutionDetails.map((item, i) => (
-              <li key={i}>{item}</li>
-            ))}
-          </ul>
-        </div>
+        {hasSolutionContent && (
+          <div className="project-detail__section">
+            <h3>{t.projects.solution}</h3>
+            {detailProject.solution && <p>{detailProject.solution}</p>}
+            {detailProject.solutionDetails.length > 0 && (
+              <ul className="project-detail__detail-list">
+                {detailProject.solutionDetails.map((item, i) => (
+                  <li key={i}>{item}</li>
+                ))}
+              </ul>
+            )}
+          </div>
+        )}
 
         {/* Key Features */}
-        {project.keyFeatures.length > 0 && (
+        {detailProject.keyFeatures.length > 0 && (
           <div className="project-detail__section">
             <h3>{language === 'en' ? 'Key Features' : 'Kernfunktionen'}</h3>
             <div className="project-detail__features-grid">
-              {project.keyFeatures.map((feature, i) => (
+              {detailProject.keyFeatures.map((feature, i) => (
                 <div key={i} className="project-detail__feature-card">
                   <h4>{feature.title}</h4>
                   <p>{feature.description}</p>
@@ -130,41 +166,45 @@ export default function ProjectPage() {
         )}
 
         {/* Results */}
-        <div className="project-detail__section project-detail__results-section">
-          <h3>{t.projects.results}</h3>
-          <div className="project-detail__results-grid">
-            {project.results.map((result, i) => (
-              <div key={i} className="project-detail__result-card">
-                <span className="project-detail__result-icon">✦</span>
-                <p>{result}</p>
-              </div>
-            ))}
+        {hasResultsContent && (
+          <div className="project-detail__section project-detail__results-section">
+            <h3>{t.projects.results}</h3>
+            <div className="project-detail__results-grid">
+              {detailProject.results.map((result, i) => (
+                <div key={i} className="project-detail__result-card">
+                  <span className="project-detail__result-icon">✦</span>
+                  <p>{result}</p>
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Testimonial */}
-        {project.testimonial && (
+        {detailProject.testimonial && (
           <div className="project-detail__testimonial">
-            <blockquote>"{project.testimonial.quote}"</blockquote>
+            <blockquote>"{detailProject.testimonial.quote}"</blockquote>
             <div className="project-detail__testimonial-author">
-              <strong>{project.testimonial.author}</strong>
-              <span>{project.testimonial.role}</span>
+              <strong>{detailProject.testimonial.author}</strong>
+              <span>{detailProject.testimonial.role}</span>
             </div>
           </div>
         )}
 
         {/* Learnings */}
-        <div className="project-detail__section">
-          <h3>{language === 'en' ? 'Key Learnings' : 'Wichtige Erkenntnisse'}</h3>
-          <div className="project-detail__learnings">
-            {project.learnings.map((learning, i) => (
-              <div key={i} className="project-detail__learning-card">
-                <span className="project-detail__learning-num">{String(i + 1).padStart(2, '0')}</span>
-                <p dangerouslySetInnerHTML={{ __html: learning }} />
-              </div>
-            ))}
+        {hasLearningsContent && (
+          <div className="project-detail__section">
+            <h3>{language === 'en' ? 'Key Learnings' : 'Wichtige Erkenntnisse'}</h3>
+            <div className="project-detail__learnings">
+              {detailProject.learnings.map((learning, i) => (
+                <div key={i} className="project-detail__learning-card">
+                  <span className="project-detail__learning-num">{String(i + 1).padStart(2, '0')}</span>
+                  <p dangerouslySetInnerHTML={{ __html: learning }} />
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
+        )}
 
         {/* Next Project */}
         {nextProject && (
