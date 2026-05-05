@@ -11,6 +11,7 @@ export interface Project {
   title: string;
   category: string;
   thumbnail: string;
+  thumbnailFit?: 'cover' | 'contain';
   detailThumbnailFit?: 'cover' | 'contain';
   color: string;
   year: string;
@@ -44,6 +45,7 @@ export const projects: ProjectData = {
       title: 'OMV MyStation App Rebranding',
       category: 'Mobile App · OMV',
       thumbnail: 'https://ik.imagekit.io/1levduhdq/OMVHero.png',
+      thumbnailFit: 'cover',
       color: '#6C63FF',
       year: '2024',
       overview: 'In summer 2024, OMV underwent a comprehensive rebranding that fundamentally renewed the company\'s visual identity and strongly influenced the user experience of its digital products, including the MyStation app, which was redesigned across four countries.',
@@ -198,7 +200,9 @@ export const projects: ProjectData = {
       id: 'learnhub',
       title: 'Power Apps Component Library',
       category: 'OMV & TÜV SÜD',
-      thumbnail: 'https://ik.imagekit.io/1levduhdq/image%20(1).png',
+      thumbnail: 'https://ik.imagekit.io/1levduhdq/Cover%20(2).png',
+      thumbnailFit: 'cover',
+      detailThumbnailFit: 'contain',
       color: '#FFB347',
       year: '2025 / 2026',
       overview: 'Development of a reusable component library in Power Apps that ensures consistent UX standards based on the internal design system across internal automation interfaces. Scalable for future BPA projects at OMV and TUV SUD.',
@@ -251,6 +255,7 @@ export const projects: ProjectData = {
       title: 'OMV MyStation App Rebranding',
       category: 'Mobile App · OMV',
       thumbnail: 'https://ik.imagekit.io/1levduhdq/OMVHero.png',
+      thumbnailFit: 'cover',
       color: '#6C63FF',
       year: '2024',
       overview: 'Im Sommer 2024 durchlief OMV ein umfassendes Rebranding, das nicht nur die visuelle Identität des Unternehmens grundlegend erneuerte, sondern auch die User Experience aller digitalen Produkte maßgeblich beeinflusste, darunter die MyStation App, die in vier Ländern neu gestaltet wurde.',
@@ -405,7 +410,9 @@ export const projects: ProjectData = {
       id: 'learnhub',
       title: 'Power Apps Component Library',
       category: 'OMV & TÜV SÜD',
-      thumbnail: 'https://ik.imagekit.io/1levduhdq/image%20(1).png',
+      thumbnail: 'https://ik.imagekit.io/1levduhdq/Cover%20(2).png',
+      thumbnailFit: 'cover',
+      detailThumbnailFit: 'contain',
       color: '#FFB347',
       year: '2025 / 2026',
       overview: 'Aufbau einer wiederverwendbaren Komponentenbibliothek in Power Apps, die konsistente UX-Standards basierend auf dem firmeninternen Design System über alle internen Automatisierungs-Interfaces hinweg sicherstellt. Skalierbar für zukünftige BPA-Projekte bei OMV und TÜV SÜD.',

@@ -27,7 +27,7 @@ export default function Projects() {
               <div className="project-card__glow" />
               <div className="project-card__thumbnail">
                 {project.thumbnail ? (
-                  <img src={project.thumbnail} alt={project.title} className="project-card__thumbnail-img" />
+                  <img src={project.thumbnail} alt={project.title} className="project-card__thumbnail-img" style={{ objectFit: project.thumbnailFit ?? 'cover' }} />
                 ) : (
                   <div
                     className="project-card__thumbnail-inner"
