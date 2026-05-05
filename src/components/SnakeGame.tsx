@@ -251,7 +251,7 @@ export default function SnakeGame() {
 
   const tagline = language === 'en'
     ? 'Lorem impsum'
-    : 'Noch da? Scheint, als wirkt mein Portfolio. 🎮';
+    : 'Ein Klassiker hat sich hier eingeschlichen. Hast du ihn entdeckt? 🐍';
 
   return (
     <div className="snake-game">

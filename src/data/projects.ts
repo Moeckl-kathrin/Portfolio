@@ -25,6 +25,7 @@ export interface Project {
   researchInsights: string[];
   process: ProcessStep[];
   solution: string;
+  solutionImage?: string;
   solutionDetails: string[];
   keyFeatures: { title: string; description: string }[];
   results: string[];
@@ -40,9 +41,9 @@ export const projects: ProjectData = {
   en: [
     {
       id: 'finflow',
-      title: 'OMV Rebranding & MyStation App',
+      title: 'OMV MyStation App Rebranding',
       category: 'Mobile App · OMV',
-      thumbnail: 'https://ik.imagekit.io/1levduhdq/OMV%20Head%20Office%204_edited.jpg?updatedAt=1776252210008',
+      thumbnail: 'https://ik.imagekit.io/1levduhdq/OMVHero.png',
       color: '#6C63FF',
       year: '2024',
       overview: 'In summer 2024, OMV underwent a comprehensive rebranding that fundamentally renewed the company\'s visual identity and strongly influenced the user experience of its digital products, including the MyStation app, which was redesigned across four countries.',
@@ -67,6 +68,7 @@ export const projects: ProjectData = {
         { title: 'Handover', description: 'Delivered final prototypes in a structured, development-ready format including specifications and implementation agreements.', icon: '🚀' },
       ],
       solution: 'The MyStation app UI was fully aligned with OMV\'s updated corporate design, including the new logo, refreshed color palette, and new typography. By following an iterative, country-by-country approach, local requirements could be addressed precisely while ensuring a consistent and contemporary appearance across all markets.',
+      solutionImage: 'https://ik.imagekit.io/1levduhdq/OMV_mystation.png',
       solutionDetails: [
         'Complete visual overhaul of the app in line with the new OMV corporate design',
         'Extension of the design system with missing icons and components',
@@ -88,7 +90,7 @@ export const projects: ProjectData = {
         { src: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=1200&h=700&fit=crop', caption: 'Design system extension — New icons and interface elements prepared for reuse' },
         { src: 'https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?w=1200&h=700&fit=crop', caption: 'Final app UI — Updated MyStation screens aligned with the new OMV corporate design' },
       ],
-      nextProject: 'global-intranet',
+      nextProject: 'shopscape',
     },
     {
       id: 'global-intranet',
@@ -151,7 +153,7 @@ export const projects: ProjectData = {
         { src: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=1200&h=700&fit=crop', caption: 'Information Architecture — Card sorting and prioritization of MVP topics' },
         { src: 'https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=1200&h=700&fit=crop', caption: 'Intranet Concept — Wireframes and UX foundation for external implementation' },
       ],
-      nextProject: 'shopscape',
+      nextProject: 'finflow',
     },
     {
       id: 'shopscape',
@@ -240,15 +242,15 @@ export const projects: ProjectData = {
       testimonial: undefined,
       learnings: [],
       gallery: [],
-      nextProject: 'finflow',
+      nextProject: 'global-intranet',
     },
   ],
   de: [
     {
       id: 'finflow',
-      title: 'OMV Rebranding & MyStation App',
+      title: 'OMV MyStation App Rebranding',
       category: 'Mobile App · OMV',
-      thumbnail: 'https://ik.imagekit.io/1levduhdq/OMV%20Head%20Office%204_edited.jpg?updatedAt=1776252210008',
+      thumbnail: 'https://ik.imagekit.io/1levduhdq/OMVHero.png',
       color: '#6C63FF',
       year: '2024',
       overview: 'Im Sommer 2024 durchlief OMV ein umfassendes Rebranding, das nicht nur die visuelle Identität des Unternehmens grundlegend erneuerte, sondern auch die User Experience aller digitalen Produkte maßgeblich beeinflusste, darunter die MyStation App, die in vier Ländern neu gestaltet wurde.',
@@ -257,7 +259,7 @@ export const projects: ProjectData = {
       team: '4 UX/UI Designer',
       client: 'OMV',
       tools: ['Figma', 'Illustrator'],
-      challenge: 'Mit dem neuen Corporate Design von OMV mussten sämtliche digitalen Produkte grundlegend überarbeitet werden, unter Berücksichtigung länderspezifischer Anforderungen und eines engen Zeitrahmens.',
+      challenge: 'Im Zuge des neuen Corporate Designs der OMV mussten alle digitalen Produkte umfassend überarbeitet werden. Dabei waren sowohl länderspezifische Anforderungen als auch ein enger Zeitrahmen zu berücksichtigen, einschließlich der MyStation App.',
       challengeDetails: [
         'Bestehendes UI entsprach nicht mehr der neuen Markenidentität, visueller Bruch zwischen Corporate Design und digitalen Produkten',
         'Fehlende Icons und Designelemente im bestehenden Design System mussten neu entwickelt werden',
@@ -273,6 +275,7 @@ export const projects: ProjectData = {
         { title: 'Übergabe & Handover', description: 'Strukturierte, entwicklungsfertige Übergabe der finalen Prototypen inklusive Spezifikationen und Absprachen zur technischen Umsetzung.', icon: '🚀' },
       ],
       solution: 'Das neue UI der MyStation App wurde vollständig auf das überarbeitete Corporate Design von OMV ausgerichtet, mit modernem Logo, aktualisierter Farbpalette und neuer Typografie. Durch einen iterativen, länderweisen Ansatz konnten länderspezifische Anforderungen gezielt berücksichtigt und ein konsistentes, zeitgemäßes Erscheinungsbild für alle Märkte sichergestellt werden.',
+      solutionImage: 'https://ik.imagekit.io/1levduhdq/OMV_mystation.png',
       solutionDetails: [
         'Vollständige visuelle Überarbeitung der App im Einklang mit dem neuen OMV Corporate Design',
         'Erweiterung des Design Systems um fehlende Icons und Komponenten',
@@ -294,7 +297,7 @@ export const projects: ProjectData = {
         { src: 'https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?w=1200&h=700&fit=crop', caption: 'Design-System-Erweiterung — Neue Icons und Interface-Elemente für die Wiederverwendung vorbereitet' },
         { src: 'https://images.unsplash.com/photo-1555774698-0b77e0d5fac6?w=1200&h=700&fit=crop', caption: 'Finales App-UI — Aktualisierte MyStation Screens im neuen OMV Corporate Design' },
       ],
-      nextProject: 'global-intranet',
+      nextProject: 'shopscape',
     },
     {
       id: 'global-intranet',
@@ -357,7 +360,7 @@ export const projects: ProjectData = {
         { src: 'https://images.unsplash.com/photo-1587854692152-cbe660dbde88?w=1200&h=700&fit=crop', caption: 'Informationsarchitektur — Card Sorting und Priorisierung der MVP-Themen' },
         { src: 'https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=1200&h=700&fit=crop', caption: 'Intranet-Konzept — Wireframes und UX-Basis für die externe Umsetzung' },
       ],
-      nextProject: 'shopscape',
+      nextProject: 'finflow',
     },
     {
       id: 'shopscape',
@@ -446,7 +449,7 @@ export const projects: ProjectData = {
       testimonial: undefined,
       learnings: [],
       gallery: [],
-      nextProject: 'finflow',
+      nextProject: 'global-intranet',
     },
   ],
 };

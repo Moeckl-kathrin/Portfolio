@@ -122,6 +122,17 @@ export default function ProjectPage() {
           </div>
         )}
 
+        {/* Solution Image */}
+        {detailProject.solutionImage && (
+          <div className="project-detail__hero-img" style={{ height: 'auto' }}>
+            <img
+              src={detailProject.solutionImage}
+              alt={`${detailProject.title} – Solution`}
+              style={{ width: '100%', height: 'auto', objectFit: 'contain' }}
+            />
+          </div>
+        )}
+
         {/* Key Features */}
         {detailProject.keyFeatures.length > 0 && (
           <div className="project-detail__section">
