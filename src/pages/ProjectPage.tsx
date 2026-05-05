@@ -12,6 +12,9 @@ export default function ProjectPage() {
   const nextProject = detailProject?.nextProject
     ? projects[language].find((p) => p.id === detailProject.nextProject)
     : null;
+  const prevProject = detailProject
+    ? projects[language].find((p) => p.nextProject === detailProject.id) ?? null
+    : null;
   const hasSolutionContent = detailProject ? Boolean(detailProject.solution?.trim()) || detailProject.solutionDetails.length > 0 : false;
   const hasResultsContent = detailProject ? detailProject.results.length > 0 : false;
   const hasLearningsContent = detailProject ? detailProject.learnings.length > 0 : false;
@@ -189,15 +192,28 @@ export default function ProjectPage() {
           </div>
         )}
 
-        {/* Next Project */}
-        {nextProject && (
-          <Link to={`/project/${nextProject.id}`} className="project-detail__next-project">
-            <span className="project-detail__next-label">
-              {language === 'en' ? 'Next Project' : 'Nächstes Projekt'}
-            </span>
-            <span className="project-detail__next-title">{nextProject.title}</span>
-            <span className="project-detail__next-arrow">→</span>
-          </Link>
+        {/* Project Navigation */}
+        {(prevProject || nextProject) && (
+          <div className="project-detail__nav-row">
+            {prevProject ? (
+              <Link to={`/project/${prevProject.id}`} className="project-detail__prev-project">
+                <span className="project-detail__next-arrow project-detail__prev-arrow">←</span>
+                <span className="project-detail__next-title">{prevProject.title}</span>
+                <span className="project-detail__next-label">
+                  {language === 'en' ? 'Previous Project' : 'Vorheriges Projekt'}
+                </span>
+              </Link>
+            ) : <div />}
+            {nextProject ? (
+              <Link to={`/project/${nextProject.id}`} className="project-detail__next-project project-detail__next-project--nav">
+                <span className="project-detail__next-label">
+                  {language === 'en' ? 'Next Project' : 'Nächstes Projekt'}
+                </span>
+                <span className="project-detail__next-title">{nextProject.title}</span>
+                <span className="project-detail__next-arrow">→</span>
+              </Link>
+            ) : <div />}
+          </div>
         )}
       </div>
 

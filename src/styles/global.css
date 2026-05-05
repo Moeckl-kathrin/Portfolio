@@ -1561,19 +1561,44 @@ img {
 }
 
 /* Next Project Link */
+.project-detail__nav-row {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  margin-top: 4rem;
+  border-top: 1px solid var(--color-border);
+}
+
+.project-detail__prev-project,
 .project-detail__next-project {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   padding: 4rem 2rem;
-  margin-top: 4rem;
-  border-top: 1px solid var(--color-border);
   text-decoration: none;
   transition: all var(--transition);
+  flex: 1;
 }
 
-.project-detail__next-project:hover {
+.project-detail__prev-project {
+  align-items: flex-start;
+  text-align: left;
+  border-right: 1px solid var(--color-border);
+}
+
+.project-detail__next-project--nav {
+  align-items: flex-end;
+  text-align: right;
+}
+
+.project-detail__next-project {
+  margin-top: 0;
+  border-top: none;
+}
+
+.project-detail__next-project:hover,
+.project-detail__prev-project:hover {
   background: rgba(108, 99, 255, 0.03);
 }
 
@@ -1601,6 +1626,10 @@ img {
 
 .project-detail__next-project:hover .project-detail__next-arrow {
   transform: translateX(8px);
+}
+
+.project-detail__prev-project:hover .project-detail__prev-arrow {
+  transform: translateX(-8px);
 }
 
 /* Old results list — no longer used but keep just in case */
@@ -1772,7 +1801,7 @@ img {
   font-size: 0.9rem;
   color: var(--color-text-muted);
   margin-bottom: 1rem;
-  font-style: italic;
+  font-style: normal;
   letter-spacing: 0.02em;
 }
 

@@ -250,8 +250,8 @@ export default function SnakeGame() {
   };
 
   const tagline = language === 'en'
-    ? 'Lorem impsum'
-    : 'Ein Klassiker hat sich hier eingeschlichen. Hast du ihn entdeckt? 🐍';
+    ? 'Quick break from scrolling? Snake is ready 🎮'
+    : 'Kurze Auszeit vom Scrollen? Snake läuft schon 🎮';
 
   return (
     <div className="snake-game">
