@@ -25,6 +25,8 @@ export interface Project {
   challengeDetails: string[];
   researchInsights: string[];
   process: ProcessStep[];
+  processImage?: string;
+  processImages?: string[];
   solution: string;
   solutionImage?: string;
   solutionDetails: string[];
@@ -129,6 +131,7 @@ export const projects: ProjectData = {
         { title: 'Prototype Development', description: 'Prototypes created for handoff to the external implementation team, based on MVP prioritization and Matomo analysis.', icon: '🎨' },
         { title: 'Validation', description: 'Usability testing to validate the defined KPIs.', icon: '✅' },
       ],
+      processImages: ['https://ik.imagekit.io/1levduhdq/tree-test-analysis-uxbeam.gif', 'https://ik.imagekit.io/1levduhdq/Card%20Sorting.png', 'https://ik.imagekit.io/1levduhdq/condens.png'],
       solution: 'Based on the insights, three clear MVP priorities were defined as the foundation for the new intranet: a user-oriented search with strong semantics and error tolerance; clear content ownership at regional and global level; and an intuitive UX/UI that reduces cognitive load and helps users reach their goals faster.',
       solutionDetails: [
         'User-oriented search with semantic understanding, error tolerance, and clear result prioritization',
@@ -161,7 +164,9 @@ export const projects: ProjectData = {
       id: 'shopscape',
       title: 'RPA & BPA',
       category: 'OMV & TÜV SÜD',
-      thumbnail: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=520&fit=crop',
+      thumbnail: 'https://ik.imagekit.io/1levduhdq/BPMN_diagram.png',
+      thumbnailFit: 'cover',
+      detailThumbnailFit: 'contain',
       color: '#FF6B6B',
       year: '2025 / 2026',
       overview: 'Regular visualization of complex enterprise processes as interactive interfaces. Technical specifications translated into user-friendly interfaces.',
@@ -228,6 +233,7 @@ export const projects: ProjectData = {
         { title: 'Documentation & Handover', description: 'Created clear usage documentation for the BPA team, including do\'s and don\'ts plus practical examples.', icon: '📝' },
         { title: 'Rollout & Iteration', description: 'Introduced the library into active projects, gathered development feedback, and expanded the system continuously.', icon: '🚀' },
       ],
+      processImage: 'https://ik.imagekit.io/1levduhdq/image%20(1).png?updatedAt=1777382809292',
       solution: 'A centralized component library now provides developers with ready-made, CI-compliant UI building blocks through drag and drop, without requiring design expertise. It unifies the visual quality of Power Apps across both organizations and lets developers focus on implementation instead of interface design.',
       solutionDetails: [
         'Reusable components based on the internal design system',
@@ -320,7 +326,7 @@ export const projects: ProjectData = {
       tools: ['Condens', 'Figma', 'CardSorting+', 'UXbeam'],
       challenge: 'Das globale Intranet von TÜV SÜD, genutzt von Mitarbeitenden weltweit, entsprach nicht mehr den Anforderungen einer modernen, internationalen Organisation.',
       challengeDetails: [
-        'Visuell veraltet, kein responsives Design — obwohl Außendienstmitarbeitende mobilen Zugang benötigten',
+        'Visuell veraltet, kein responsives Design obwohl Außendienstmitarbeitende mobilen Zugang benötigten',
         'Suchfunktion lieferte irrelevante, veraltete oder falsch priorisierte Ergebnisse',
         'Inhalte stark auf den deutschen Bereich ausgerichtet, für internationale Mitarbeitende kaum relevant',
         'Fehlende Content-Verantwortlichkeiten führten zu Sackgassen und veralteten Seiten',
@@ -333,12 +339,13 @@ export const projects: ProjectData = {
       ],
       process: [
         { title: 'Desk Research & Data Collection', description: 'Analyse von Matomo-Nutzungsdaten, Erstellung der Interview-Kandidatenliste und interne Systemanalyse.', icon: '🔍' },
-        { title: 'Semistrukturierte User Interviews', description: '19 Interviews mit globalen Mitarbeitenden, Tagging und Clustering aller relevanten Aussagen im Research-Tool.', icon: '🗣️' },
+        { title: 'Semistrukturierte User Interviews', description: '19 Interviews mit globalen Mitarbeitenden, Tagging und Clustering aller relevanten Aussagen im Research-Tool Condens.', icon: '🗣️' },
         { title: 'Synthese & MVP-Priorisierung', description: 'Findings zu 3 MVP-Prioritäten verdichtet: Orientation & Findability, Content Ownership, Intuitive UX/UI.', icon: '📊' },
         { title: 'Card Sorting & Tree Testing', description: 'Nutzerorientierte Informationsarchitektur auf Basis mentaler Modelle der Mitarbeitenden entwickelt.', icon: '🗂️' },
         { title: 'Prototyp Erstellung', description: 'Prototypen zur Übergabe an das externe Umsetzungsteam, basierend auf MVP-Priorisierung und Matomo-Auswertung.', icon: '🎨' },
         { title: 'Testing', description: 'Usability-Tests zur Überprüfung der definierten KPIs (optional beauftragt).', icon: '✅' },
       ],
+      processImages: ['https://ik.imagekit.io/1levduhdq/tree-test-analysis-uxbeam.gif', 'https://ik.imagekit.io/1levduhdq/Card%20Sorting.png', 'https://ik.imagekit.io/1levduhdq/condens.png'],
       solution: 'Aus den Erkenntnissen wurden drei klare MVP-Prioritäten abgeleitet, die als Grundlage für das neue Intranet dienten: eine nutzerorientierte Suche, die fehlertolerant und semantisch stark ist; klare Content-Verantwortlichkeiten auf regionaler und globaler Ebene; und ein intuitives UX/UI-Design, das kognitive Entlastung schafft und Nutzer schnell zu ihren Zielen führt.',
       solutionDetails: [
         'Nutzerorientierte Suche mit semantischem Verständnis, Fehlertoleranz und klarer Ergebnisprioritierung',
@@ -371,7 +378,9 @@ export const projects: ProjectData = {
       id: 'shopscape',
       title: 'RPA & BPA',
       category: 'OMV & TÜV SÜD',
-      thumbnail: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&h=520&fit=crop',
+      thumbnail: 'https://ik.imagekit.io/1levduhdq/BPMN_diagram.png',
+      thumbnailFit: 'cover',
+      detailThumbnailFit: 'contain',
       color: '#FF6B6B',
       year: '2025 / 2026',
       overview: 'Regelmäßige Visualisierungen komplexer Unternehmensprozesse als interaktive Interfaces. Technische Spezifikationen in nutzerfreundliche Oberflächen übersetzt.',
@@ -438,6 +447,7 @@ export const projects: ProjectData = {
         { title: 'Dokumentation & Übergabe', description: 'Erstellung einer verständlichen Nutzungsdokumentation für das BPA-Team inklusive Do\'s & Don\'ts und Anwendungsbeispielen.', icon: '📝' },
         { title: 'Rollout & Iteration', description: 'Einführung der Library in laufende Projekte, Sammlung von Feedback aus der Entwicklungspraxis und kontinuierliche Erweiterung.', icon: '🚀' },
       ],
+      processImage: 'https://ik.imagekit.io/1levduhdq/image%20(1).png?updatedAt=1777382809292',
       solution: 'Eine zentrale Komponentenbibliothek stellt Entwicklern vorgefertigte, CI-konforme UI-Bausteine per Drag-and-drop bereit, ohne Designkenntnisse vorauszusetzen. Die Library vereinheitlicht das Erscheinungsbild aller Power Apps innerhalb der Konzerne und gibt Entwicklern die Freiheit, sich auf die technische Umsetzung zu konzentrieren.',
       solutionDetails: [
         'Wiederverwendbare Komponenten auf Basis des firmeninternen Design Systems',

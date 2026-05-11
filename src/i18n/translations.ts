@@ -46,6 +46,7 @@ export interface Translations {
   footer: {
     copyright: string;
     madeWith: string;
+    disclaimer: string;
   };
 }
 
@@ -60,7 +61,7 @@ const en: Translations = {
     greeting: 'Hello, I\'m',
     name: 'Kathrin Möckl',
     title: 'UX  · UI ·  RESEARCH ·  GRAPHIC DESIGN',
-    subtitle: 'UX Designer & Researcher from munich, crafting research-driven digital experiences that resonate and scale.',
+    subtitle: 'Research-driven. Visually clear. Functionally thought.',
     cta: 'View My Work',
   },
   about: {
@@ -122,13 +123,14 @@ const en: Translations = {
   },
   contact: {
     sectionTitle: 'Let\'s Connect',
-    description: 'I\'m always open to discussing new opportunities, creative ideas, or ways to bring your vision to life. Let\'s create something amazing together.',
-    email: 'Send an Email',
+    description: 'Interested in working together or sharing ideas? I look forward to a conversation.',
+    email: 'It\'s a match',
     linkedin: 'Connect on LinkedIn',
   },
   footer: {
     copyright: '© 2026 Kathrin Möckl. All rights reserved.',
     madeWith: 'Designed with passion',
+    disclaimer: 'Some screens have been recreated for confidentiality reasons.',
   },
 };
 
@@ -143,7 +145,7 @@ const de: Translations = {
     greeting: 'Hallo, ich bin',
     name: 'Kathrin Möckl',
     title: 'UX  · UI ·  RESEARCH ·  GRAPHIC DESIGN',
-    subtitle: 'Als UX Designerin & Researcherin aus München, schaffe ich nutzerzentrierte intuitive Produkte mit großer Wirkung.',
+    subtitle: 'Research-driven. Visuell klar. Funktional gedacht.',
     cta: 'Meine Arbeiten ansehen',
   },
   about: {
@@ -155,7 +157,7 @@ const de: Translations = {
   },
   skills: {
     sectionTitle: 'Was ich mache',
-    sectionSubtitle: 'Dienstleistungsübersicht',
+    sectionSubtitle: '',
     sectionIntro: '',
     items: [
       {
@@ -205,13 +207,14 @@ const de: Translations = {
   },
   contact: {
     sectionTitle: 'Kontakt aufnehmen',
-    description: 'Ich freue mich immer über neue Möglichkeiten, kreative Ideen oder Wege, Ihre Vision zum Leben zu erwecken. Lassen Sie uns gemeinsam etwas Großartiges schaffen.',
-    email: 'E-Mail senden',
+    description: 'Interesse an einer Zusammenarbeit oder gemeinsamen Ideen? Ich freue mich auf ein Gespräch.',
+    email: 'It\'s a match',
     linkedin: 'Auf LinkedIn vernetzen',
   },
   footer: {
     copyright: '© 2026 Kathrin Möckl. Alle Rechte vorbehalten.',
     madeWith: 'Mit Leidenschaft gestaltet',
+    disclaimer: 'Manche Screens wurden aus Vertraulichkeitsgründen nachgebildet.',
   },
 };
 

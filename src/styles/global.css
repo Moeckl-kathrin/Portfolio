@@ -1719,6 +1719,144 @@ img {
   padding: 0 2rem 6rem;
 }
 
+/* ====== MOBILE RESPONSIVE IMPROVEMENTS ====== */
+@media (max-width: 768px) {
+  /* Reduce vertical section padding */
+  .section {
+    padding: 4rem 1.25rem;
+  }
+
+  /* Hero tighter on mobile */
+  .hero {
+    padding: 6rem 1.25rem 3rem;
+  }
+
+  .hero__subtitle {
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Project detail header */
+  .project-detail__header {
+    padding: 2.5rem 1.25rem 1.5rem;
+  }
+
+  /* Project detail body */
+  .project-detail__body {
+    padding: 0 1.25rem 4rem;
+  }
+
+  /* Hero image shorter on mobile */
+  .project-detail__hero-img {
+    height: 220px;
+    margin: 1.5rem 0;
+    border-radius: 12px;
+  }
+
+  /* Contact section */
+  .contact {
+    padding: 4rem 1.25rem;
+  }
+
+  /* Nav row: stack vertically */
+  .project-detail__nav-row {
+    flex-direction: column;
+  }
+
+  .project-detail__prev-project {
+    align-items: center;
+    text-align: center;
+    border-right: none;
+    border-bottom: 1px solid var(--color-border);
+    border-top: 1px solid var(--color-border);
+    padding: 2rem 1.25rem;
+  }
+
+  .project-detail__next-project--nav {
+    align-items: center;
+    text-align: center;
+    padding: 2rem 1.25rem;
+  }
+
+  .project-detail__next-project {
+    border-top: 1px solid var(--color-border);
+    padding: 2rem 1.25rem;
+  }
+
+  .project-detail__next-title {
+    font-size: 1.25rem;
+  }
+
+  /* Results section: remove negative margin on mobile */
+  .project-detail__results-section {
+    padding: 1.5rem 1rem;
+  }
+
+  /* Skill cards: remove forced aspect ratio on mobile */
+  .skills__list-item {
+    aspect-ratio: unset;
+    padding: 1.5rem 1.25rem;
+  }
+
+  /* Skills list: ensure 1 column on mobile */
+  .skills__list {
+    grid-template-columns: 1fr;
+  }
+
+  /* Navbar logo smaller on mobile */
+  .navbar__logo {
+    font-size: 1.5rem;
+  }
+
+  /* Navbar padding tighter */
+  .navbar {
+    padding: 1rem 1.25rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 3rem 1rem;
+  }
+
+  .project-detail__body {
+    padding: 0 1rem 3rem;
+  }
+
+  .project-detail__header {
+    padding: 2rem 1rem 1.25rem;
+  }
+
+  .contact {
+    padding: 3rem 1rem;
+  }
+
+  .hero {
+    padding: 5.5rem 1rem 2.5rem;
+  }
+
+  .contact__buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .hero__buttons {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .hero__cta {
+    justify-content: center;
+  }
+}
+
 /* ====== CONTACT ====== */
 .contact {
   text-align: center;

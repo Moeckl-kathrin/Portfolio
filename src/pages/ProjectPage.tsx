@@ -110,6 +110,32 @@ export default function ProjectPage() {
           </div>
         </div>
 
+        {/* Process Images */}
+        {detailProject.processImages && detailProject.processImages.length > 0 ? (
+          <div style={{ display: 'flex', gap: '1.5rem', marginBottom: '2rem', justifyContent: 'center', flexWrap: 'wrap', alignItems: 'stretch' }}>
+            {detailProject.processImages.map((src, i) => (
+              <div
+                key={i}
+                style={{ flex: '1 1 0', minWidth: '200px', aspectRatio: '4/3', overflow: 'hidden' }}
+              >
+                <img
+                  src={src}
+                  alt={`${detailProject.title} – Process ${i + 1}`}
+                  style={{ width: '100%', height: '100%', objectFit: 'contain', display: 'block' }}
+                />
+              </div>
+            ))}
+          </div>
+        ) : detailProject.processImage ? (
+          <div style={{ width: '100%', marginBottom: '2rem' }}>
+            <img
+              src={detailProject.processImage}
+              alt={`${detailProject.title} – Process`}
+              style={{ width: '100%', height: 'auto', objectFit: 'contain', display: 'block' }}
+            />
+          </div>
+        ) : null}
+
         {/* Solution */}
         {hasSolutionContent && (
           <div className="project-detail__section">
