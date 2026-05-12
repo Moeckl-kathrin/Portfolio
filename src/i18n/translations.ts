@@ -66,6 +66,8 @@ const en: Translations = {
     subtitle: 'Research-driven. Visually clear. Functionally thought.',
     cta: 'My Work',
   },
+  about: {
+    sectionTitle: 'About Me',
     description: [
       'I believe technology should not leave anyone behind, regardless of age or prior knowledge.',
       'Especially now that AI and automation are changing so much, we need interfaces that bring people along rather than overwhelm them.',
