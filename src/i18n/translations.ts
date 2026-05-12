@@ -124,7 +124,7 @@ const en: Translations = {
   contact: {
     sectionTitle: 'Let\'s Connect',
     description: 'Interested in working together or sharing ideas? I look forward to a conversation.',
-    email: 'It\'s a match',
+    email: 'Let\'s chat',
     linkedin: 'Connect on LinkedIn',
   },
   footer: {
@@ -152,7 +152,8 @@ const de: Translations = {
     sectionTitle: 'Über Mich',
     description: [
       'Ich glaube Technologie sollte niemanden zurücklassen, egal welches Alter und egal mit welchem Vorwissen.',
-      'Gerade weil KI und Automatisierung so vieles auf den Kopf stellen, braucht es eine Benutzeroberfläche, die Menschen mitnimmt statt sie zu überfordern. Dafür bringe ich einiges mit: Als Shopleitung habe ich gelernt, was Nutzer*innen wirklich kommunizieren. Als Grafikerin, visuell zu denken und während meinem Studium in UX-Design und in zwei internationalen Konzernen habe ich Research und Design von Grund auf gemacht. Das ist die Kombination, die ich in jedes Projekt mitbringe.',
+      'Gerade weil KI und Automatisierung so vieles auf den Kopf stellen, braucht es eine Benutzeroberfläche, die Menschen mitnimmt statt sie zu überfordern.',
+      'Dafür bringe ich einiges mit: Als Shopleitung habe ich gelernt, was Nutzer*innen wirklich kommunizieren. Als Grafikerin, visuell zu denken und während meinem Studium in UX-Design und in zwei internationalen Konzernen habe ich Research und Design von Grund auf gemacht. Das ist die Kombination, die ich in jedes Projekt mitbringe.',
     ],
   },
   skills: {
@@ -208,7 +209,7 @@ const de: Translations = {
   contact: {
     sectionTitle: 'Kontakt aufnehmen',
     description: 'Interesse an einer Zusammenarbeit oder gemeinsamen Ideen? Ich freue mich auf ein Gespräch.',
-    email: 'It\'s a match',
+    email: 'Let\'s chat',
     linkedin: 'Auf LinkedIn vernetzen',
   },
   footer: {

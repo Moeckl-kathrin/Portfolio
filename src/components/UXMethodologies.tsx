@@ -15,16 +15,27 @@ const METHODOLOGIES = [
   'Graphic Design',
 ];
 
+const TOOLS = [
+  'Figma',
+  'Illustrator',
+  'Photoshop',
+  'Indesign',
+  'Power Apps',
+  'Claude',
+  'ChatGPT',
+  'Copilot',
+];
+
 export default function UXMethodologies() {
   const { language } = useLanguage();
-  const label = language === 'de' ? 'UX Methoden, die ich anwende' : 'UX methodologies I use';
+  const label = language === 'de' ? 'UX Methoden' : 'UX methodologies I use';
 
   // Double the items for seamless infinite scroll
   const items = [...METHODOLOGIES, ...METHODOLOGIES];
 
   return (
     <section className="ux-methodologies">
-      <p className="ux-methodologies__label">{label}</p>
+      <h2 className="section__title">{label}</h2>
       <div className="ux-methodologies__track">
         <div className="ux-methodologies__marquee">
           {items.map((method, i) => (
