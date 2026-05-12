@@ -64,7 +64,7 @@ const en: Translations = {
     name: 'Kathrin Möckl',
     title: 'UX  · UI ·  RESEARCH ·  GRAPHIC DESIGN',
     subtitle: 'Research-driven. Visually clear. Functionally thought.',
-    cta: 'View My Work',
+    cta: 'My Work',
   },
   about: {
     sectionTitle: 'About Me',
