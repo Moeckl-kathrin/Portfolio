@@ -66,11 +66,10 @@ const en: Translations = {
     subtitle: 'Research-driven. Visually clear. Functionally thought.',
     cta: 'My Work',
   },
-  about: {
-    sectionTitle: 'About Me',
     description: [
       'I believe technology should not leave anyone behind, regardless of age or prior knowledge.',
-      'Especially now that AI and automation are reshaping so much, interfaces need to guide people instead of overwhelming them. That perspective is grounded in my experience: as a retail manager, I learned what users really communicate; as a graphic designer, I learned to think visually; and through my UX design studies and work in two international corporations, I built a strong foundation in research and design. That is the combination I bring to every project.',
+      'Especially now that AI and automation are changing so much, we need interfaces that bring people along rather than overwhelm them.',
+      'As a retail manager, I learned what users really communicate. As a graphic designer and through my studies in UX Design as well as my experience in international corporations, I bring together research, design and visual thinking. At the same time, I work intensively with AI-powered tools to test ideas faster and make technology tangibly understandable.',
     ],
   },
   skills: {
@@ -155,8 +154,8 @@ const de: Translations = {
     sectionTitle: 'Über Mich',
     description: [
       'Ich glaube Technologie sollte niemanden zurücklassen, egal welches Alter und egal mit welchem Vorwissen.',
-      'Gerade weil KI und Automatisierung so vieles auf den Kopf stellen, braucht es eine Benutzeroberfläche, die Menschen mitnimmt statt sie zu überfordern.',
-      'Dafür bringe ich einiges mit: Als Shopleitung habe ich gelernt, was Nutzer*innen wirklich kommunizieren. Als Grafikerin, visuell zu denken und während meinem Studium in UX-Design und in zwei internationalen Konzernen habe ich Research und Design von Grund auf gemacht. Das ist die Kombination, die ich in jedes Projekt mitbringe.',
+      'Gerade weil KI und Automatisierung so vieles verändern, braucht es Benutzeroberflächen, die Menschen mitnehmen statt sie zu überfordern.',
+      'Als Shopleitung habe ich gelernt, was Nutzer*innen wirklich kommunizieren. Als Grafikerin und durch mein Studium in UX Design sowie meine Erfahrung in internationalen Konzernen bringe ich Research, Design und visuelles Denken zusammen. Gleichzeitig arbeite ich intensiv mit KI gestützten Tools, um Ideen schneller zu testen und Technologien verständlich erlebbar zu machen.',
     ],
   },
   skills: {
