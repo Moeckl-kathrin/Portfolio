@@ -15,16 +15,7 @@ const METHODOLOGIES = [
   'Graphic Design',
 ];
 
-const TOOLS = [
-  'Figma',
-  'Illustrator',
-  'Photoshop',
-  'Indesign',
-  'Power Apps',
-  'Claude',
-  'ChatGPT',
-  'Copilot',
-];
+
 
 export default function UXMethodologies() {
   const { language } = useLanguage();
