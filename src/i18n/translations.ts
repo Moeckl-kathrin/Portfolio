@@ -5,6 +5,7 @@ export interface Translations {
     home: string;
     projects: string;
     about: string;
+    skills: string;
     contact: string;
   };
   hero: {
@@ -55,6 +56,7 @@ const en: Translations = {
     home: 'Home',
     projects: 'Projects',
     about: 'About',
+    skills: 'Skills',
     contact: 'Contact',
   },
   hero: {
@@ -73,7 +75,7 @@ const en: Translations = {
   },
   skills: {
     sectionTitle: 'What I Do',
-    sectionSubtitle: 'Services Overview',
+    sectionSubtitle: '',
     sectionIntro: '',
     items: [
       {
@@ -139,6 +141,7 @@ const de: Translations = {
     home: 'Start',
     projects: 'Projekte',
     about: 'Über mich',
+    skills: 'Skills',
     contact: 'Kontakt',
   },
   hero: {
@@ -146,7 +149,7 @@ const de: Translations = {
     name: 'Kathrin Möckl',
     title: 'UX  · UI ·  RESEARCH ·  GRAPHIC DESIGN',
     subtitle: 'Research-driven. Visuell klar. Funktional gedacht.',
-    cta: 'Meine Arbeiten ansehen',
+    cta: 'Meine Projekte',
   },
   about: {
     sectionTitle: 'Über Mich',

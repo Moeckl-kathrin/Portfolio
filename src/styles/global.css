@@ -364,9 +364,10 @@ img {
   font-size: 1.1rem;
   color: #ffffff;
   max-width: 600px;
-  margin: 0 0 2.5rem;
+  margin: 0 auto 2.5rem;
   line-height: 1.8;
   text-transform: none;
+  text-align: center;
 }
 
 .hero__actions {
