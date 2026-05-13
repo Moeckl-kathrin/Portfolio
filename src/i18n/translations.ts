@@ -71,7 +71,8 @@ const en: Translations = {
     description: [
       'I believe technology should not leave anyone behind, regardless of age or prior knowledge.',
       'Especially now that AI and automation are changing so much, we need interfaces that bring people along rather than overwhelm them.',
-      'As a retail manager, I learned what users really communicate. As a graphic designer and through my studies in UX Design as well as my experience in international corporations, I bring together research, design and visual thinking. At the same time, I work intensively with AI-powered tools to test ideas faster and make technology tangibly understandable.',
+      'As a graphic designer and through my studies in UX Design as well as my experience in international corporations, I bring together research, design and visual thinking.',
+      'At the same time, I work intensively with AI-powered tools to test ideas faster and make technology tangibly understandable.',
     ],
   },
   skills: {
