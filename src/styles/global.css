@@ -2161,6 +2161,22 @@ img {
   margin-top: 0.25rem;
 }
 
+.footer__email {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: color var(--transition);
+  text-transform: none;
+}
+
+.footer__email:hover {
+  color: var(--color-text);
+}
+
 /* ====== ANIMATIONS ====== */
 .fade-in {
   opacity: 0;
