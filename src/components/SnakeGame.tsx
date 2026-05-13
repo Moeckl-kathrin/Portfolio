@@ -249,6 +249,18 @@ export default function SnakeGame() {
     }
   };
 
+  const handleDpad = useCallback((dir: Dir) => {
+    const s = stateRef.current;
+    if (!s.started || s.gameOver) {
+      reset();
+      return;
+    }
+    const opposite: Record<Dir, Dir> = { up: 'down', down: 'up', left: 'right', right: 'left' };
+    if (dir !== opposite[s.dir]) {
+      s.nextDir = dir;
+    }
+  }, [reset]);
+
   const tagline = language === 'en'
     ? 'Quick break from scrolling? Snake is ready 🎮'
     : 'Kurze Auszeit vom Scrollen? Snake läuft schon 🎮';
@@ -269,6 +281,45 @@ export default function SnakeGame() {
             {language === 'en' ? 'Score' : 'Punkte'}: {score}
           </span>
         )}
+      </div>
+
+      {/* Mobile D-pad */}
+      <div className="snake-game__dpad">
+        <button
+          className="snake-game__dpad-btn snake-game__dpad-btn--up"
+          onTouchStart={(e) => { e.preventDefault(); handleDpad('up'); }}
+          onClick={() => handleDpad('up')}
+          aria-label="Up"
+        >
+          ▲
+        </button>
+        <div className="snake-game__dpad-middle">
+          <button
+            className="snake-game__dpad-btn snake-game__dpad-btn--left"
+            onTouchStart={(e) => { e.preventDefault(); handleDpad('left'); }}
+            onClick={() => handleDpad('left')}
+            aria-label="Left"
+          >
+            ◀
+          </button>
+          <div className="snake-game__dpad-center" />
+          <button
+            className="snake-game__dpad-btn snake-game__dpad-btn--right"
+            onTouchStart={(e) => { e.preventDefault(); handleDpad('right'); }}
+            onClick={() => handleDpad('right')}
+            aria-label="Right"
+          >
+            ▶
+          </button>
+        </div>
+        <button
+          className="snake-game__dpad-btn snake-game__dpad-btn--down"
+          onTouchStart={(e) => { e.preventDefault(); handleDpad('down'); }}
+          onClick={() => handleDpad('down')}
+          aria-label="Down"
+        >
+          ▼
+        </button>
       </div>
     </div>
   );
