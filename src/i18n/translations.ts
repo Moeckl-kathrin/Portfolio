@@ -157,7 +157,8 @@ const de: Translations = {
     description: [
       'Ich glaube Technologie sollte niemanden zurücklassen, egal welches Alter und egal mit welchem Vorwissen.',
       'Gerade weil KI und Automatisierung so vieles verändern, braucht es Benutzeroberflächen, die Menschen mitnehmen statt sie zu überfordern.',
-      'Als Shopleitung habe ich gelernt, was Nutzer*innen wirklich kommunizieren. Als Grafikerin und durch mein Studium in UX Design sowie meine Erfahrung in internationalen Konzernen bringe ich Research, Design und visuelles Denken zusammen. Gleichzeitig arbeite ich intensiv mit KI gestützten Tools, um Ideen schneller zu testen und Technologien verständlich erlebbar zu machen.',
+      'Als Grafikerin und durch mein Studium in UX Design sowie meine Erfahrung in internationalen Konzernen bringe ich Research, Design und visuelles Denken zusammen.',
+      'Gleichzeitig arbeite ich intensiv mit KI gestützten Tools, um Ideen schneller zu testen und Technologien verständlich erlebbar zu machen.',
     ],
   },
   skills: {
