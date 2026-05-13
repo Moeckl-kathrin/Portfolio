@@ -425,6 +425,7 @@ img {
 .hero__subtitle {
   font-size: 1.1rem;
   color: #ffffff;
+  width: 100%;
   max-width: 600px;
   margin: 0 auto 2.5rem;
   line-height: 1.8;
